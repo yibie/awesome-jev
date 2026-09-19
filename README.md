@@ -214,6 +214,7 @@ Source file: [`categories/data-labeling-curation.md`](categories/data-labeling-c
 Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-benchmarking.md)
 
 - [Jev Playground](https://github.com/hegargarcia/jev-playground) - Model evaluation: benchmarks Jev against Luna, Haiku, and Gemini at choosing validated legal moves in explicit-state games, scoring decision quality and consistency across a sequence of moves.
+- [BTK audit studies](https://boringtoolskit.com/blog/seo-audit-cost-2026/) - Content & growth: Jev striking-distance triage ranks SEO fixes and drives study pages; 1,204 pages judged per run, 4,816 judgments in under 3 minutes, $0.0048 per 12-query batch.
 - [Jev vs Mistral and Gemini for event validation](https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation) - Event discovery: head-to-head test of Jev against Mistral Small and Gemini Flash-Lite at validating local event listings.
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval) - Research automation: reproducible eval harness plus field note for Jev Ultrafast research-browser tasks, with QC'd cases, a suite runner, and a report generator.
 - [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/) - Model evaluation: tests one direct Jev question per row against 12–14 Jev-scored dimensions with locally fitted weights on three classification tasks, reaching 0.9076 against 0.8373 on Japanese NLI but flagging about 25× more hard benign rows as attacks.
