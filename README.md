@@ -65,7 +65,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 9 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 37 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 37 entries
-- [Agent Decisions](categories/agent-decisions.md) — 55 entries
+- [Agent Decisions](categories/agent-decisions.md) — 56 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 9 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 32 entries
 - [Calibration & Research](categories/calibration-research.md) — 37 entries
@@ -320,6 +320,7 @@ Source file: [`categories/agent-decisions.md`](categories/agent-decisions.md)
 - [Eliza](https://github.com/elizaOS/eliza) ![stars](https://img.shields.io/github/stars/elizaOS/eliza?style=flat-square&label=%E2%98%85) - Autonomous agents: multi-agent framework integrating TypeSafe System One decision services for sub-100ms intent classification, action dispatching, and confidence-gated tool execution.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat-square&label=%E2%98%85) - Coding agents: multi-agent team orchestration for Claude Code featuring opt-in Jev hooks for sub-millisecond judgment points, decision caching, and per-point egress controls.
 - [jcode](https://github.com/1jehuang/jcode) ![stars](https://img.shields.io/github/stars/1jehuang/jcode?style=flat-square&label=%E2%98%85) - Agent runtimes: RAM-efficient autonomous agent harness implemented in Rust with native TypeSafe Jev typed decision transport for memory pruning, browser navigation, and voice interaction routing.
+- [AG2](https://github.com/ag2ai/ag2) ![stars](https://img.shields.io/github/stars/ag2ai/ag2?style=flat-square&label=%E2%98%85) - Autonomous agents: open-source AgentOS (formerly AutoGen) shipping a native `TypeSafeClient` provider that translates conversation events into TypeSafe System One requests for typed decision and tool execution.
 
 ### Data Labeling & Curation
 
