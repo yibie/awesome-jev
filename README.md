@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 9 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 32 entries
 - [Calibration & Research](categories/calibration-research.md) — 37 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 84 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 85 entries
 - [Game & Simulation](categories/game-simulation.md) — 24 entries
 - [Finance & Trading](categories/finance-trading.md) — 7 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
@@ -502,6 +502,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [JevT++](https://github.com/wiatrM/jevtpp) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/wiatrM/jevtpp?style=flat-square&label=%E2%98%85) - C++ integration: independent C++20 library with compile-time enum schemas, typed Choice/Noul/Score results and abstention, local Laya inference through ONNX Runtime or ggml, and an opt-in TypeSafe System One HTTP backend tested with mocks and loopback HTTP rather than live-provider calls.
 - [Sim](https://github.com/simstudioai/sim) ![stars](https://img.shields.io/github/stars/simstudioai/sim?style=flat-square&label=%E2%98%85) - Agent frameworks: open-source collaborative workspace for building, deploying, and monitoring AI agents featuring native TypeSafe System One evaluation and decision provider integration.
 - [RubyLLM](https://github.com/crmne/ruby_llm) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/crmne/ruby_llm?style=flat-square&label=%E2%98%85) - Ruby ecosystem: official Ruby gem connecting TypeSafe judgment models to RubyLLM with a native System One protocol for typed questions, probabilistic answers, and error normalization.
+- [Effect TypeSafe](https://github.com/Effect-TS/effect/tree/main/packages/ai/typesafe) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Effect-TS/effect?style=flat-square&label=%E2%98%85) - TypeScript ecosystem: official `@effect/ai-typesafe` package providing an Effect `DecisionModel` provider backed by TypeSafe System One for typed classification, ratings, and probabilities via Effect's HTTP client runtime.
 
 ### Game & Simulation
 
