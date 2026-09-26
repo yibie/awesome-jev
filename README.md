@@ -320,6 +320,7 @@ Source file: [`categories/agent-decisions.md`](categories/agent-decisions.md)
 - [Eliza](https://github.com/elizaOS/eliza) ![stars](https://img.shields.io/github/stars/elizaOS/eliza?style=flat-square&label=%E2%98%85) - Autonomous agents: multi-agent framework integrating TypeSafe System One decision services for sub-100ms intent classification, action dispatching, and confidence-gated tool execution.
 - [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) ![agent: Claude Code](https://img.shields.io/badge/agent-Claude%20Code-C1512C?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Yeachan-Heo/oh-my-claudecode?style=flat-square&label=%E2%98%85) - Coding agents: multi-agent team orchestration for Claude Code featuring opt-in Jev hooks for sub-millisecond judgment points, decision caching, and per-point egress controls.
 - [jcode](https://github.com/1jehuang/jcode) ![stars](https://img.shields.io/github/stars/1jehuang/jcode?style=flat-square&label=%E2%98%85) - Agent runtimes: RAM-efficient autonomous agent harness implemented in Rust with native TypeSafe Jev typed decision transport for memory pruning, browser navigation, and voice interaction routing.
+- [opencode-jev-compaction](https://github.com/radqnico/opencode-jev-compaction) - Replaces OpenCode compaction summaries with Jev keep/drop judgments that prune stale tool calls while preserving everything kept verbatim.
 
 ### Data Labeling & Curation
 
