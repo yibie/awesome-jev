@@ -74,7 +74,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Finance & Trading](categories/finance-trading.md) — 7 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
 - [Content Moderation](categories/content-moderation.md) — 8 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 90 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 91 entries
 
 ### Open categories still being seeded
 
@@ -658,6 +658,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Vercel and OpenRouter adoption numbers](https://tradersunion.com/news/financial-news/show/3491019-typesafe-ai-jev-developer-automation/) - News: Vercel reports Jev drew more than twice the interest from paid developer accounts in its first 24 hours than any previous model launch on the service, and OpenRouter reports its token volume more than tripled over one weekend.
 - [Jev / TypesafeAI is revolutionary as LLMs](https://www.reddit.com/r/ArtificialInteligence/comments/1wkhsyh/jev_typesafeai_is_revolutionary_as_llms/) - Reddit r/ArtificialInteligence (182 upvotes, 195 comments): the largest single thread on the launch, arguing over whether a decision model changes what LLMs are for rather than merely being cheaper.
 - [laya.tools](https://laya.tools) - Site: an independent directory of about 950 projects built on Laya, the Apache-2.0 open alternative to Jev, imported daily from GitHub, npm, Hugging Face and X and browsable by platform and use case, with a Laya vs Jev comparison page.
+- [How to Get Started With Jev in Python](https://realpython.com/jev-python/) - Tutorial: Real Python's guide and companion code demonstrating how to replace unstructured LLM prompting with typed Jev decision questions in Python, including Noul classification and OpenRouter integration.
 
 ## Submission format
 
