@@ -64,7 +64,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Classification & Routing](categories/classification-routing.md) — 52 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 10 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 45 entries
-- [Scoring & Ranking](categories/scoring-ranking.md) — 38 entries
+- [Scoring & Ranking](categories/scoring-ranking.md) — 39 entries
 - [Agent Decisions](categories/agent-decisions.md) — 57 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 33 entries
@@ -278,6 +278,7 @@ Source file: [`categories/scoring-ranking.md`](categories/scoring-ranking.md)
 - [Vector Graph RAG](https://github.com/zilliztech/vector-graph-rag) ![stars](https://img.shields.io/github/stars/zilliztech/vector-graph-rag?style=flat-square&label=%E2%98%85) - Multi-hop retrieval: uses Jev Noul judgments to score candidate relations and applies a configurable threshold before retrieving their linked documents.
 - [Jev-Code-Reviewer](https://github.com/egma-ai/jev-code-reviewer) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/egma-ai/jev-code-reviewer?style=flat-square&label=%E2%98%85) - Code review: asks Jev for a priority score per changed unit and returns a `priorityGap` that a local uncertainty policy turns into the order a human should read the hunks in, while OpenAI explains the ones that surface.
 - [WorldMonitor](https://github.com/koala73/worldmonitor) ![stars](https://img.shields.io/github/stars/koala73/worldmonitor?style=flat-square&label=%E2%98%85) - Geopolitical intelligence: real-time global intelligence dashboard using TypeSafe Jev questions to score news headline severity into 5 threat levels and categorize events across 14 conflict, cyber, and infrastructure domains.
+- [jev-seo](https://github.com/DeployMates/jev-seo) ![stars](https://img.shields.io/github/stars/DeployMates/jev-seo?style=flat-square&label=%E2%98%85) - SEO auditing: a deterministic crawler measures each page and Jev `Choice`, `Score` and `Noul` questions over the state derived from it return the page's type, its search intent, eight rubric scores and four gate answers, which code bands into act/review/escalate and streams to a dashboard as NDJSON.
 
 ### Agent Decisions
 
