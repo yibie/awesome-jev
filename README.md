@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 35 entries
 - [Calibration & Research](categories/calibration-research.md) — 49 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 97 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 98 entries
 - [Game & Simulation](categories/game-simulation.md) — 24 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -564,6 +564,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Jev Showcase](https://github.com/cobusgreyling/Jev) ![stars](https://img.shields.io/github/stars/cobusgreyling/Jev?style=flat-square&label=%E2%98%85) - Pattern gallery: a runnable app with four agent skills that put `Choice`, `Score` and `Noul` next to parallel fan-out, a router and a guardrail in one codebase.
 - [DecisionKit](https://github.com/iamjonatha/decisionkit-dotnet) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/iamjonatha/decisionkit-dotnet?style=flat-square&label=%E2%98%85) - .NET ecosystem: provider-independent .NET decision engine whose domain package holds no Jev URL, header or DTO, mapping `Choice`, `Score` and `Noul` questions onto `POST /v1/systemone` from a separate provider package, with a runnable ASP.NET ticket-triage sample that picks the owning team and escalates to a human at a normalized `Score` of 0.8, and 1,096 tests across `net8.0` and `net10.0` that run with no HTTP.
 - [intern-decision-mlx](https://github.com/dex0shubham/intern-decision-mlx) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/dex0shubham/intern-decision-mlx?style=flat-square&label=%E2%98%85) - Local runtime: serves Shanghai AI Lab's open Intern-Decision-0.8B vision decision model on Apple Silicon behind a `/v1/systemone`-shaped endpoint that also takes screenshots, so an agent can threshold the calibrated `Choice`, `Score` and `Noul` answers and escalate the rest — 0.9 s per 1080p screenshot downscaled to 1024 px on an 8 GB M2 MacBook Air, and the same answers as the lab's PyTorch reference on 67 of 67 fields.
+- [metajev](https://github.com/YYTbit/metajev) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/YYTbit/metajev?style=flat-square&label=%E2%98%85) - Decision infrastructure: keeps the full distribution behind each Jev `Noul`, `Choice`, or `Score` answer under a key of state, question, and model, so an accept boundary can be moved across the whole recorded history with no further Jev calls.
 
 ### Game & Simulation
 
