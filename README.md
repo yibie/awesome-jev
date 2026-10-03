@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 59 entries
+- [Classification & Routing](categories/classification-routing.md) — 60 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 10 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 47 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 38 entries
@@ -178,6 +178,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [Jevvie](https://chriswijnia.com/lab/jevvie) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) - Web companions: a page offers its actions as WebMCP tools and one Jev `Choice` picks the action a visitor's request means, with a `Choice` per argument asked alongside, asking back when the top two options are close and gating unprompted tips with a `Noul` ([source](https://github.com/cwdx/jevvie)).
 - [JevRouter](https://github.com/BillionsBobby/JevRouter) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![stars](https://img.shields.io/github/stars/BillionsBobby/JevRouter?style=flat-square&label=%E2%98%85) - Coding agents: asks Jev a typed `Choice` over models, subagents, skills, MCP tools, CLIs and plugins, applies availability, permission and risk policies, and returns `no_decision` below the configured confidence threshold while preserving the original probabilities.
 - [Gut Check](https://github.com/funkadelic/ha-gutcheck) ![stars](https://img.shields.io/github/stars/funkadelic/ha-gutcheck?style=flat-square&label=%E2%98%85) - Smart home: Home Assistant integration whose eight install checks ask Jev a `Score` on each pending update's release notes and a `Choice` per item elsewhere, such as whether an unavailable entity is expected, worth fixing or safe to remove; answers below 0.5 confidence change nothing, and the rest that need action become Repairs cards the user must confirm.
+- [Vibefilter](https://github.com/vibefilter/filament) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/vibefilter/filament?style=flat-square&label=%E2%98%85) - Admin panels: Filament table filter that asks Jev a `Noul` per row on a plain-English statement such as "The customer is angry." and keeps the rows at or above 0.8, matching the demo's own mood labels on 861 of 1,000 reviews at about $0.003 and one second per statement, with scores cached by content.
 
 ### Adaptive & Realtime UI
 
