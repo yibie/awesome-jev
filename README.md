@@ -67,7 +67,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 41 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 37 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 38 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 103 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
@@ -422,6 +422,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [S1MB](https://github.com/hotchpotch/S1MB) ![stars](https://img.shields.io/github/stars/hotchpotch/S1MB?style=flat-square&label=%E2%98%85) - Decision-model evaluation: compares Jev and open decision models across 137 English Choice, Noul, and Score benchmarks, including six synthetic generalization probes, with public evaluation data, recorded results, and an interactive [leaderboard](https://huggingface.co/spaces/hotchpotch/S1MB-leaderboard).
 - [jev-judge](https://github.com/00200200/jev-judge) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/00200200/jev-judge?style=flat-square&label=%E2%98%85) - CI/CD & LLM evaluation: runs declarative YAML/JSON/JSONL test suites natively on Jev Noul, Choice, and Score decisions for RAG faithfulness, hallucination detection, and agent safety with watch mode, parallel batching, and GitHub Actions PR reporting in sub-100ms at $0.00004 per decision.
 - [Vals AI's independent evaluation of Jev](https://x.com/ValsAI/status/2107559370208997711) - Independent benchmark: matches GPT-6 Astra's 97.5% on 400 claim-verification questions at roughly a five-hundredth of the cost, yet ranks last on a 12-task LegalBench slice and lands at 1.6% error when tuned to a 1% budget.
+- [System-One Control Bench](https://github.com/Exemocaro/System-One-Control-Bench) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Exemocaro/System-One-Control-Bench?style=flat-square&label=%E2%98%85) - Model evaluation: steers an agent through 100 key-and-door grid puzzles with one Jev `Choice` per move, scoring every pick against an exact BFS solver, and finds that Jev picks an optimal move in 90% of 495 fixed positions yet finishes only 57 of 100 games (Gemma 4 26B 61, DeepSeek V4.1 Flash 60, with reasoning 80; the open decision models GLiClass 13 and Laya 12), so strong single decisions do not add up to a finished task; report and recorded games at [socb.dev](https://socb.dev).
 
 ### Calibration & Research
 
