@@ -186,8 +186,48 @@ branch pass catalog-checks." 2>/dev/null || true
     if git push -q "$remote" "$tmp:$branch" --force-with-lease 2>/dev/null; then
       info "已把条目移入 $RELOCATE_INTO 并推回分支（$moved 行）"
     else
-      info "⚠ 推不回 fork（贡献者未开 maintainer 编辑权限）"
-      git checkout -q main 2>/dev/null; git branch -q -D "$tmp" 2>/dev/null
+      # 贡献者没开 maintainerCanModify 时推不回分支，无法在 PR 本体上补 commit。
+      # 但不能就此把 PR 关掉自己代劳 —— 那会让贡献者的 PR 显示为 closed-unmerged，
+      # 而条目的作者变成我。改为本地把它合进来：合并信息用 gh pr merge 同样的
+      # "Merge pull request #N from fork/branch"，GitHub 据此把 PR 标记为已合并，
+      # 贡献者的 commit 也真的进了 main。条目在合并后从 README 搬进分类文件。
+      info "⚠ 推不回 fork（贡献者未开 maintainer 编辑权限），改走本地合并"
+      git checkout -q main 2>/dev/null || return 1
+      git fetch -q origin main 2>/dev/null
+      git merge -q --ff-only origin/main 2>/dev/null || git reset -q --hard origin/main
+      if ! git merge --no-ff --no-edit -m "Merge pull request #$n from $fork" "$tmp" >/dev/null 2>&1; then
+        info "✗ 本地合并失败（可能冲突）"; git merge --abort >/dev/null 2>&1
+        git branch -q -D "$tmp" 2>/dev/null; return 1
+      fi
+      git checkout -q -- README.md 2>/dev/null || true
+      while IFS= read -r line; do
+        [ -z "$line" ] && continue
+        line=$(python3 - "$line" <<'PYNORMSEP'
+import re, sys
+line = sys.argv[1]
+if not line.startswith("- ["):
+    print(line); raise SystemExit
+link = re.match(r"^(- \[[^\]]+\]\([^)]+\))(\s*`\{[^}]*\}`)?", line)
+if not link:
+    print(line); raise SystemExit
+head, tags = link.group(1), link.group(2) or ""
+rest = line[link.end():].lstrip()
+m = re.match(r"^[-:\u2014]\s*(.+)$", rest)
+print(f"{head}{tags} - {m.group(1)}" if m else (f"{head}{tags} - {rest}" if rest else line))
+PYNORMSEP
+)
+        grep -qF -- "$line" "categories/$RELOCATE_INTO" 2>/dev/null && continue
+        printf '%s\n' "$line" >> "categories/$RELOCATE_INTO"
+      done <<< "$lines"
+      python3 scripts/build-readme.py >/dev/null 2>&1 || true
+      git add -A
+      git commit -q -m "chore: rebuild README after #$n" 2>/dev/null || true
+      if git push -q origin main 2>/dev/null; then
+        info "✓ 已本地合并并推送（#$n 将以已合并状态显示，条目在 $RELOCATE_INTO）"
+      else
+        info "✗ 推送 main 失败"
+      fi
+      git branch -q -D "$tmp" 2>/dev/null
       return 1
     fi
   fi
