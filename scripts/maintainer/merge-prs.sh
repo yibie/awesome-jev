@@ -142,11 +142,29 @@ relocate_readme_edits() {
   git checkout -q "$tmp" 2>/dev/null || { info "✗ 切换失败"; return 1; }
 
   # 搬行：去掉 README 渲染出来的 shields.io badge 图片（分类文件要用源码标签形式），
-  # 已存在的行不重复加。
+  # 已存在的行不重复加。分隔符先归一化：ENTRY_RE 只认 ` - `，而手写进 README 的行常用
+  # `:` 或全角破折号，照搬过去会被 catalog-checks 判为无法解析。
   local moved=0
   while IFS= read -r line; do
     [ -z "$line" ] && continue
     printf '%s' "$line" | grep -q "img.shields.io" && info "  ⚠ 这一行带渲染 badge，标签已丢失，需人工补回"
+    line=$(python3 - "$line" <<'PYNORMSEP'
+import re, sys
+line = sys.argv[1]
+if not line.startswith("- ["):
+    print(line); raise SystemExit
+link = re.match(r"^(- \[[^\]]+\]\([^)]+\))(\s*`\{[^}]*\}`)?", line)
+if not link:
+    print(line); raise SystemExit
+head, tags = link.group(1), link.group(2) or ""
+rest = line[link.end():].lstrip()
+m = re.match(r"^[-:\u2014]\s*(.+)$", rest)
+if m:
+    print(f"{head}{tags} - {m.group(1)}")
+else:
+    print(f"{head}{tags} - {rest}" if rest else line)
+PYNORMSEP
+)
     grep -qF -- "$line" "categories/$RELOCATE_INTO" 2>/dev/null && continue
     printf '%s\n' "$line" >> "categories/$RELOCATE_INTO"
     moved=$((moved + 1))
