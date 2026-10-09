@@ -116,3 +116,4 @@ Use this category for ecosystem tooling built around Jev — SDKs, wrappers, gat
 - [jev-bisect](https://github.com/mkly/jev-bisect) - Numeric search: turns Jev into a bisection oracle, halving a range with typed yes/no answers to home in on a number instead of asking a model to guess it.
 - [TypeSafe Jev + ComfyUI](https://github.com/youneselfakir0/typesafe-jev-comfyui-integration) - Image generation: routes a prompt to one of three ComfyUI workflow templates with a Jev decision rather than a keyword match.
 - [system_one_client](https://github.com/schainks/system_one_client) - Elixir ecosystem: one client that speaks to several System One decision models, Jev among them, behind a single interface.
+- [Bud Decision Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) - Local model host: a cross-platform desktop app and server that runs eleven open System One models side by side, Jev-Omni among them, behind one API.
