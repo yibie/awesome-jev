@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 66 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 49 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 50 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 42 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
@@ -255,6 +255,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [openclaw-jev-leakguard](https://github.com/yousan/openclaw-jev-leakguard) ![agent: OpenClaw](https://img.shields.io/badge/agent-OpenClaw-B91C1C?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/yousan/openclaw-jev-leakguard?style=flat-square&label=%E2%98%85) - Agent security: OpenClaw plugin that checks every outgoing agent message against where it is going, running local key-format and term rules and then five Jev `Noul` questions in one call (credential, where credentials are kept, client name, internal infrastructure, confidential business information) through OpenClaw's `decisionModel`, hosted Jev or a local Kev, and blocking, asking or holding it back by the channel's public, shared or private tier; with Jev it missed 0 of 56 synthetic leaks, 30 of which no regex or term list could see, with 4 false alarms on 57 ordinary messages at 223 ms p50.
 - [jev-runtime-security](https://github.com/ringzerosec/jev-runtime-security) ![stars](https://img.shields.io/github/stars/ringzerosec/jev-runtime-security?style=flat-square&label=%E2%98%85) - AI security: asks Jev a Choice on tool-call argument risk and a Noul on sensitive-data exposure for AI coding agents, where the model answer can only raise severity and the kernel still decides the syscall.
 - [NucleiSniper](https://github.com/MorDavid/NucleiSniper) ![stars](https://img.shields.io/github/stars/MorDavid/NucleiSniper?style=flat-square&label=%E2%98%85) - Security triage: prioritises Nuclei vulnerability templates by fingerprinting the target first, so a scan spends its budget on templates that can actually match.
+- [local-decider](https://github.com/pusucip25/local-decider) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/pusucip25/local-decider?style=flat-square&label=%E2%98%85) - Agent safety: a pre-action gate for a tool-using browser agent that runs a deterministic rule chain first and only asks Jev where no rule decides — anything a rule can settle is never sent to weights — emitting allow / confirm / block and swapping between hosted `jev-latest` and a local Jev-compatible port by one environment variable; on 112 labelled cases the rules alone resolve 61 and are correct on 58 (95.1%) with 0 false allows on irreversible tools, and the end state is read from the DOM rather than from the agent's own report.
 
 ### Scoring & Ranking
 
