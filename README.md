@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 37 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 106 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 107 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -201,7 +201,6 @@ Source file: [`categories/adaptive-realtime-ui.md`](categories/adaptive-realtime
 - [shapeshift](https://github.com/anishfn/shapeshift) ![stars](https://img.shields.io/github/stars/anishfn/shapeshift?style=flat-square&label=%E2%98%85) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) ![stars](https://img.shields.io/github/stars/RyanErkal/jevcast?style=flat-square&label=%E2%98%85) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
 - [Laser](https://github.com/iYassr/omarchy-laser) ![stars](https://img.shields.io/github/stars/iYassr/omarchy-laser?style=flat-square&label=%E2%98%85) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
-- [Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio): a cross-platform desktop app (macOS, Windows, Linux) that runs `laya`, `kev`, `laya-typed-decisions` etc locally behind the Jev API (`POST /v1/systemone`), with a Playground, versioned templates with decision history, and a Train page for LoRA fine-tuning on your own labelled decisions.
 
 ### Verification & Guardrails
 
@@ -593,6 +592,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [jev-bisect](https://github.com/mkly/jev-bisect) ![stars](https://img.shields.io/github/stars/mkly/jev-bisect?style=flat-square&label=%E2%98%85) - Numeric search: turns Jev into a bisection oracle, halving a range with typed yes/no answers to home in on a number instead of asking a model to guess it.
 - [TypeSafe Jev + ComfyUI](https://github.com/youneselfakir0/typesafe-jev-comfyui-integration) ![stars](https://img.shields.io/github/stars/youneselfakir0/typesafe-jev-comfyui-integration?style=flat-square&label=%E2%98%85) - Image generation: routes a prompt to one of three ComfyUI workflow templates with a Jev decision rather than a keyword match.
 - [system_one_client](https://github.com/schainks/system_one_client) ![stars](https://img.shields.io/github/stars/schainks/system_one_client?style=flat-square&label=%E2%98%85) - Elixir ecosystem: one client that speaks to several System One decision models, Jev among them, behind a single interface.
+- [Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio) ![stars](https://img.shields.io/github/stars/BudEcosystem/Bud-Decision-Studio?style=flat-square&label=%E2%98%85) - a cross-platform desktop app (macOS, Windows, Linux) that runs `laya`, `kev`, `laya-typed-decisions` etc locally behind the Jev API (`POST /v1/systemone`), with a Playground, versioned templates with decision history, and a Train page for LoRA fine-tuning on your own labelled decisions.
 
 ### Game & Simulation
 
