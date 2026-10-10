@@ -64,7 +64,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Classification & Routing](categories/classification-routing.md) — 67 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 49 entries
-- [Scoring & Ranking](categories/scoring-ranking.md) — 42 entries
+- [Scoring & Ranking](categories/scoring-ranking.md) — 43 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 40 entries
@@ -303,6 +303,7 @@ Source file: [`categories/scoring-ranking.md`](categories/scoring-ranking.md)
 - [LinkScout](https://github.com/ianTPE/linkscout) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/ianTPE/linkscout?style=flat-square&label=%E2%98%85) - Web search: browser extension that asks Jev, in one request per result, for relevance and depth `Score`s, `Noul`s on SEO filler and sales pages, a page-type `Choice` and a `Choice` over pre-split paragraphs for the key passage, then combines them in code into a 0–100 badge that re-ranks Google, Bing and DuckDuckGo results.
 - [Chem Autocomplete (ChemIllusion)](https://chemillusion.com/blog/2026-09-25-chem-autocomplete-jev) - Chemistry: uses Jev to rank which RDKit-validated sketcher structure candidates to show as autocomplete cards and in what order (~0.2s per request).
 - [dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) ![agent: DeepSeek Harness](https://img.shields.io/badge/agent-DeepSeek%20Harness-2D5BD7?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/luobosibing2/dsh-jev-plugin?style=flat-square&label=%E2%98%85) - Coding agents: asks Jev a `Noul` for each skill summary or original glob path, orders candidates by the returned relevance probability, and supplies the selected skills or ranked paths to DeepSeek Harness, with all features disabled by default.
+- [JevRanker](https://github.com/hgqimo/JevRanker) ![stars](https://img.shields.io/github/stars/hgqimo/JevRanker?style=flat-square&label=%E2%98%85) - Retrieval and RAG: an open-source port of Jev's typed-decision format ([NanoJev](https://github.com/TianyuCodings/NanoJev)'s Qwen3-0.6B, trained on T2Ranking, no hosted API call) that replaces the LLM comparator inside two published search rerankers, BlitzRank's tournament graph and Reranker-Guided Search, where each match is one `Choice` scored over k candidate paths in a single forward pass with zero decoded tokens, reaching 0.6309 nDCG@10 on T2Ranking dev against 0.2162 for the same 0.6B decoding a RankGPT listwise prompt, at 34 ms instead of 752 ms per match and 8.6-9.4x lower per-query latency inside RGS.
 
 ### Agent Decisions
 
