@@ -67,7 +67,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 44 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 45 entries
 - [Calibration & Research](categories/calibration-research.md) — 54 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 115 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
@@ -450,6 +450,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Microsoft-Decision-1](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) - Competitor benchmark: Microsoft's hosted decision model claims the top accuracy across 36 benchmarks and uses 35x lower P50 latency than GPT-6 Sol, and flips its decision on only 1.3% of eight perturbation styles, in a post later updated to add Jev's accuracy and calibration numbers.
 - [Hafen](https://github.com/abhimanyupandian/hafen) ![stars](https://img.shields.io/github/stars/abhimanyupandian/hafen?style=flat-square&label=%E2%98%85) - A clean and minimalist desktop tool to test your AI agents the way your users talk to them.
 - [Jev vs Claude Haiku 4.5 as input guardrails](https://github.com/rahulbansalc6414/jev-as-a-guardrail) ![stars](https://img.shields.io/github/stars/rahulbansalc6414/jev-as-a-guardrail?style=flat-square&label=%E2%98%85) - Benchmark: compares the two as input guardrails on detection rate, false positive rate, latency and cost, over a documented prompt mix of 53% attack, 13% evasion and 33% benign, with duplicates removed.
+- [Decision Models as Guardrails](https://github.com/raxITlabs/decision-models-as-guardrails) ![stars](https://img.shields.io/github/stars/raxITlabs/decision-models-as-guardrails?style=flat-square&label=%E2%98%85) - Guardrail evaluation: asks Jev 1.13.0, Jev 1.14.0, 16 other decision models and Amazon Bedrock Guardrails the same 9,975 labelled checks across six suites (content, prompt attacks, denied topics, profanity, PII, grounding), posing each check to Jev as a `Noul` and blocking at p ≥ 0.5 for every system with nothing tuned per model, where Jev 1.14.0 scores 88.7 balanced accuracy against 79.0 for Bedrock Guardrails at $39 versus $113 per million checks and direct prompt attacks are the weakest category for every system, with per-row results on a public [leaderboard](https://dm-as-guardrails.raxitlabs.com).
 
 ### Calibration & Research
 
