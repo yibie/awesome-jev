@@ -74,7 +74,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 6 entries
-- [Content Moderation](categories/content-moderation.md) — 13 entries
+- [Content Moderation](categories/content-moderation.md) — 14 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
 
 ### Open categories still being seeded
@@ -758,6 +758,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [HN Jev Sorter](https://github.com/ritza-co/hn-jev-sorter) ![stars](https://img.shields.io/github/stars/ritza-co/hn-jev-sorter?style=flat-square&label=%E2%98%85) - Reading aid: a Chrome extension that sorts Hacker News comments into buckets you choose while you read, with Jev classifying each comment in about a second.
 - [stalwart-jev](https://github.com/mikluko/stalwart-jev) ![stars](https://img.shields.io/github/stars/mikluko/stalwart-jev?style=flat-square&label=%E2%98%85) - Drop-in classifier: serves the chat-completions endpoint Stalwart's LLM spam classifier calls, but asks Jev one `Choice` over subject and body and answers in the server's own vocabulary - Unsolicited, Commercial, Harmful or Legitimate.
 - [Jev X Blocker](https://github.com/bit-cook/Jev-X-Blocker) ![stars](https://img.shields.io/github/stars/bit-cook/Jev-X-Blocker?style=flat-square&label=%E2%98%85) - Local moderation: a Chrome MV3 extension that uses your own Jev key to hide high-confidence sexual and solicitation content on X, covering posts as well as replies, with a recoverable placeholder rather than a silent removal.
+- [jev-multilingual-benchmark](https://github.com/webmaster-ramos/jev-multilingual-benchmark) ![stars](https://img.shields.io/github/stars/webmaster-ramos/jev-multilingual-benchmark?style=flat-square&label=%E2%98%85) - E-commerce moderation: reproducible benchmark that asks `jev-1.13.0` a `Noul` flag plus category and language `Choice` and a severity `Score` on a store's display names and comments in 25 languages, against chat and guard models and scored only on blind-verified items, finding one false positive on 360 clean texts and 94.0% on 520 comments in eight languages, while a bare native swear word in a name field is caught in 21 of 27 cases in English, Spanish, Russian, Japanese and Chinese but 15 of 80 in the other sixteen languages, written up at [webmaster-ramos.com](https://webmaster-ramos.com/blog/decision-model-in-your-customers-language).
 
 ### Related Practices / Discussions
 
