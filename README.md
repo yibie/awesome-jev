@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 76 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 63 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 64 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 66 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
@@ -282,6 +282,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [playwright-system1-triage](https://github.com/kint4/playwright-system1-triage) ![stars](https://img.shields.io/github/stars/kint4/playwright-system1-triage?style=flat-square&label=%E2%98%85) - CI triage: categorises Playwright failures with typed decisions instead of a prose essay per timeout, on the argument that when eighty specs fail at once a generative model is both slow and unreadable.
 - [Jev CI triage](https://github.com/tejred213/ci-triage) ![stars](https://img.shields.io/github/stars/tejred213/ci-triage?style=flat-square&label=%E2%98%85) - CI gate: Jev decides what caused each failed test and code decides what to do about it - re-run the build for environment glitches and flaky tests, otherwise file a ticket with the owner - with a one-page HTML report per run.
 - [VerdictAD](https://github.com/sgstq0811/VerdictAD-Jev-AD) ![stars](https://img.shields.io/github/stars/sgstq0811/VerdictAD-Jev-AD?style=flat-square&label=%E2%98%85) - Industrial inspection: a training-free layer from the paper [VerdictAD](https://arxiv.org/abs/2611.02654) that asks the open Jev-style model Clef-Flash 9B `Noul` questions on whether a query image and each of its local windows show a defect against a few normal references, then multiplies the probabilities into an existing detector's image score and anomaly map, raising 4-shot Image AUROC for PatchCore, DINOv2-L, AnomalyDINO and SubspaceAD on MVTec AD, VisA and MVTec LOCO AD (68.7 to 77.5 on MVTec LOCO AD with DINOv2-L).
+- [OnlyRead](https://github.com/onlyreadai/onlyread) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/onlyreadai/onlyread?style=flat-square&label=%E2%98%85) - Browser agent security: asks Jev one `Noul` per request an AI agent's browser sends to a guarded site (does it create, modify or delete data?), lets clear reads through, refuses clear writes, and sends the uncertain band to a review model, refusing anything still unsure.
 
 ### Scoring & Ranking
 
