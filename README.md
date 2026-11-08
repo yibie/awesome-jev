@@ -61,19 +61,19 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 76 entries
+- [Classification & Routing](categories/classification-routing.md) — 77 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 64 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 66 entries
-- [Data Labeling & Curation](categories/data-labeling-curation.md) — 11 entries
+- [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
 - [Calibration & Research](categories/calibration-research.md) — 56 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 125 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
-- [Compliance & Legal](categories/compliance-legal.md) — 6 entries
+- [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 14 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
 
@@ -196,6 +196,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [vd-jev](https://github.com/ondata/vd-jev) ![stars](https://img.shields.io/github/stars/ondata/vd-jev?style=flat-square&label=%E2%98%85) - Data inspection: a VisiData plugin that asks one closed question about every row of a chosen text column, turning free text in a spreadsheet into a column of typed answers without leaving the viewer.
 - [X Reply Judge](https://github.com/liaocaoxuezhe/x-reply-judge-jev) ![stars](https://img.shields.io/github/stars/liaocaoxuezhe/x-reply-judge-jev?style=flat-square&label=%E2%98%85) - AI-text labelling: a Chrome extension that puts one badge on every X post showing the probability Jev assigns to the text being AI-written, with stated colour cutoffs at 70 and 31 and no explanation list at all.
 - [SpotAsk](https://github.com/shiquda/SpotAsk) ![stars](https://img.shields.io/github/stars/shiquda/SpotAsk?style=flat-square&label=%E2%98%85) - Query routing: a native macOS menu bar assistant that asks Jev a typed `Choice` over your configured channels to decide whether a question is answered in the app or sent to a web AI, desktop app, or CLI agent, with confirmation by default and optional auto-routing above a confidence threshold.
+- [Jev Router](https://github.com/AIAnytime/Jev-Router) ![stars](https://img.shields.io/github/stars/AIAnytime/Jev-Router?style=flat-square&label=%E2%98%85) - Model router: one OpenAI-compatible endpoint that sends each request to the right model, choosing with typed decisions that carry real probabilities.
 
 ### Adaptive & Realtime UI
 
@@ -419,6 +420,7 @@ Source file: [`categories/data-labeling-curation.md`](categories/data-labeling-c
 - [jevextract](https://github.com/gabazureus/jevextract) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/gabazureus/jevextract?style=flat-square&label=%E2%98%85) - Information extraction: LangExtract alternative where code proposes candidate spans with exact offsets and Jev answers one `Choice` per span (a schema class or none) plus a `Noul` per sentence-level class, keeping answers above a per-class threshold and flagging close calls for review, with a published benchmark measuring 10–26× lower cost than LangExtract on Gemini 3.5 Flash but lower F1 (84.2 vs 88.5 on its bilingual jx-bench).
 - [JevSpan](https://github.com/lzq-0529/jev-span) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/lzq-0529/jev-span?style=flat-square&label=%E2%98%85) - Information extraction: zero-shot named entity recognition that splits text at punctuation, asks Jev one `Choice` over every candidate window per entity type, verifies each nominee with a second `Choice` (the type, none, mixed or partial) and settles its boundary with a third, averaging 73.7 strict F1 across 12 Chinese and English NER benchmarks against 72.1 for direct extraction with Qwen3.8-27B.
 - [Jev Account Filter](https://github.com/caiweihan/jev-account-filter) ![stars](https://img.shields.io/github/stars/caiweihan/jev-account-filter?style=flat-square&label=%E2%98%85) - Research dataset curation: ranks first-page video titles with Jev `Noul`, selects Top-N thumbnails, then uses an independent account-category `Choice` with profile metadata to screen video-platform accounts, reporting $0.565 in API cost for 2,140 accounts.
+- [JevNER](https://github.com/vortezwohl/JevNER) ![stars](https://img.shields.io/github/stars/vortezwohl/JevNER?style=flat-square&label=%E2%98%85) - Named entity recognition: a Python SDK that turns typed judgments into nested entity trees, so zero-shot multilingual NER is posed as questions rather than trained as a tagging model.
 
 ### Evaluation & Benchmarking
 
@@ -741,6 +743,7 @@ Source file: [`categories/compliance-legal.md`](categories/compliance-legal.md)
 - [JevGate](https://github.com/sanketmuchhala/jevgate) ![stars](https://img.shields.io/github/stars/sanketmuchhala/jevgate?style=flat-square&label=%E2%98%85) - Institutional policy: a hybrid engine where Jev 1.14 supplies calibrated probabilities, a System-2 model supplies verdicts with quoted evidence, and Python owns the policy, the thresholds and the three-valued rule logic.
 - [jev-pii](https://github.com/senthilsweb/jev-pii) ![stars](https://img.shields.io/github/stars/senthilsweb/jev-pii?style=flat-square&label=%E2%98%85) - Compliance in SQL: Jev answers inside DuckDB as extra columns - a zero-to-one score or one option from a list - so personal data and the privacy regimes that apply become columns you can filter, join and count.
 - [Jev ToS Checker](https://github.com/shohei81/jev-tos-checker) ![stars](https://img.shields.io/github/stars/shohei81/jev-tos-checker?style=flat-square&label=%E2%98%85) - Terms of service: a Chrome extension that reads the terms on the page you are viewing and points out the clauses that may work against you, shipped in English and Japanese.
+- [Basura Vision](https://github.com/sipelepis/basura-vision) ![stars](https://img.shields.io/github/stars/sipelepis/basura-vision?style=flat-square&label=%E2%98%85) - Waste sorting: a zero-shot video pipeline that puts each item into one of four bins defined by a Philippine statute, which makes the taxonomy a legal requirement rather than a design choice.
 
 ### Content Moderation
 
