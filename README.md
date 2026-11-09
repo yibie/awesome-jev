@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 77 entries
+- [Classification & Routing](categories/classification-routing.md) — 78 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 64 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
@@ -69,12 +69,12 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
 - [Calibration & Research](categories/calibration-research.md) — 56 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 125 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 126 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
-- [Content Moderation](categories/content-moderation.md) — 14 entries
+- [Content Moderation](categories/content-moderation.md) — 15 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
 
 ### Open categories still being seeded
@@ -197,6 +197,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [X Reply Judge](https://github.com/liaocaoxuezhe/x-reply-judge-jev) ![stars](https://img.shields.io/github/stars/liaocaoxuezhe/x-reply-judge-jev?style=flat-square&label=%E2%98%85) - AI-text labelling: a Chrome extension that puts one badge on every X post showing the probability Jev assigns to the text being AI-written, with stated colour cutoffs at 70 and 31 and no explanation list at all.
 - [SpotAsk](https://github.com/shiquda/SpotAsk) ![stars](https://img.shields.io/github/stars/shiquda/SpotAsk?style=flat-square&label=%E2%98%85) - Query routing: a native macOS menu bar assistant that asks Jev a typed `Choice` over your configured channels to decide whether a question is answered in the app or sent to a web AI, desktop app, or CLI agent, with confirmation by default and optional auto-routing above a confidence threshold.
 - [Jev Router](https://github.com/AIAnytime/Jev-Router) ![stars](https://img.shields.io/github/stars/AIAnytime/Jev-Router?style=flat-square&label=%E2%98%85) - Model router: one OpenAI-compatible endpoint that sends each request to the right model, choosing with typed decisions that carry real probabilities.
+- [typesafe-cascade](https://github.com/monumei/typesafe-cascade) ![stars](https://img.shields.io/github/stars/monumei/typesafe-cascade?style=flat-square&label=%E2%98%85) - Cascade: sends every classification to a typed `Choice` first and only escalates to a reasoning model when Jev's confidence fails to clear a threshold, which is the pattern most projects here reimplement without naming it.
 
 ### Adaptive & Realtime UI
 
@@ -667,6 +668,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Flide](https://github.com/OmniJev/Flide) ![stars](https://img.shields.io/github/stars/OmniJev/Flide?style=flat-square&label=%E2%98%85) - Serving: open inference engine for decision models that forks one state into all of its questions in one forward pass, so every answer matches the question asked alone, and serves OneJev, Qwen3.5 and Gemma 4 through `/v1/systemone`.
 - [aisdk/typesafe](https://github.com/phpaisdk/typesafe) ![stars](https://img.shields.io/github/stars/phpaisdk/typesafe?style=flat-square&label=%E2%98%85) - PHP SDK: a framework-agnostic PHP 8.3 provider that gives the aisdk/core package native Jev decisions, so a PHP application can ask typed questions without hand-rolling an HTTP client.
 - [onesie](https://github.com/frodi-karlsson/onesie) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/frodi-karlsson/onesie?style=flat-square&label=%E2%98%85) - Developer tooling: Go CLI that gates shell and CI steps on Jev `Noul`, `Choice` and `Score` answers, with a calibrate command that shows what each cut catches on your own labelled examples.
+- [System One lab](https://github.com/baldellimtt/systemone-lab) ![stars](https://img.shields.io/github/stars/baldellimtt/systemone-lab?style=flat-square&label=%E2%98%85) - Teaching lab: hands-on exercises over the same `/v1/systemone` wire shape as hosted Jev, defaulting to an open-weight Laya backend locally and stating plainly that it is unaffiliated with TypeSafe.
 
 ### Game & Simulation
 
@@ -763,6 +765,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [stalwart-jev](https://github.com/mikluko/stalwart-jev) ![stars](https://img.shields.io/github/stars/mikluko/stalwart-jev?style=flat-square&label=%E2%98%85) - Drop-in classifier: serves the chat-completions endpoint Stalwart's LLM spam classifier calls, but asks Jev one `Choice` over subject and body and answers in the server's own vocabulary - Unsolicited, Commercial, Harmful or Legitimate.
 - [Jev X Blocker](https://github.com/bit-cook/Jev-X-Blocker) ![stars](https://img.shields.io/github/stars/bit-cook/Jev-X-Blocker?style=flat-square&label=%E2%98%85) - Local moderation: a Chrome MV3 extension that uses your own Jev key to hide high-confidence sexual and solicitation content on X, covering posts as well as replies, with a recoverable placeholder rather than a silent removal.
 - [jev-multilingual-benchmark](https://github.com/webmaster-ramos/jev-multilingual-benchmark) ![stars](https://img.shields.io/github/stars/webmaster-ramos/jev-multilingual-benchmark?style=flat-square&label=%E2%98%85) - E-commerce moderation: reproducible benchmark that asks `jev-1.13.0` a `Noul` flag plus category and language `Choice` and a severity `Score` on a store's display names and comments in 25 languages, against chat and guard models and scored only on blind-verified items, finding one false positive on 360 clean texts and 94.0% on 520 comments in eight languages, while a bare native swear word in a name field is caught in 21 of 27 cases in English, Spanish, Russian, Japanese and Chinese but 15 of 80 in the other sixteen languages, written up at [webmaster-ramos.com](https://webmaster-ramos.com/blog/decision-model-in-your-customers-language).
+- [jev-guard](https://github.com/Alex-Alas/jev-guard) ![stars](https://img.shields.io/github/stars/Alex-Alas/jev-guard?style=flat-square&label=%E2%98%85) - Live subtitles: sits between the speech-to-text engine and the display of a live broadcast, filtering profanity in English and Spanish before a caption reaches the LED wall or the stream.
 
 ### Related Practices / Discussions
 
