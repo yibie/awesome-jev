@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
 - [Calibration & Research](categories/calibration-research.md) — 56 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 127 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 129 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
@@ -670,6 +670,8 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [onesie](https://github.com/frodi-karlsson/onesie) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/frodi-karlsson/onesie?style=flat-square&label=%E2%98%85) - Developer tooling: Go CLI that gates shell and CI steps on Jev `Noul`, `Choice` and `Score` answers, with a calibrate command that shows what each cut catches on your own labelled examples.
 - [System One lab](https://github.com/baldellimtt/systemone-lab) ![stars](https://img.shields.io/github/stars/baldellimtt/systemone-lab?style=flat-square&label=%E2%98%85) - Teaching lab: hands-on exercises over the same `/v1/systemone` wire shape as hosted Jev, defaulting to an open-weight Laya backend locally and stating plainly that it is unaffiliated with TypeSafe.
 - [Buddy Jev action](https://buddy.works/docs/integrations/typesafe) - Deployment pipelines: a Buddy action that asks Jev one `SCORE`, `CHOICE` or `BOOLEAN` question about a commit message, changelog or any file from the run and stores the answer and its confidence in `BUDDY_ACTION_JEV_*` variables, so a later step can, for example, require manual approval when deploy risk comes back `high` or confidence drops below 0.7.
+- [typesafe (Gleam)](https://github.com/semperos/typesafe-sdk-gleam) ![stars](https://img.shields.io/github/stars/semperos/typesafe-sdk-gleam?style=flat-square&label=%E2%98%85) - Gleam client: an unofficial SDK for the Erlang target, not published to Hex and meant to be pinned to a commit, which the first two paragraphs say plainly along with the fact that TypeSafe does not endorse it.
+- [kneejerk](https://github.com/moudrkat/kneejerk) ![stars](https://img.shields.io/github/stars/moudrkat/kneejerk?style=flat-square&label=%E2%98%85) - On-device decisions: puts a Jev-like model inside a Capacitor plugin on the phone rather than behind a server or a localhost HTTP port, and maps the alternatives it is racing - Transformers.js in the browser, Core ML on a Mac, offline ONNX runtimes.
 
 ### Game & Simulation
 
