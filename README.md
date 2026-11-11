@@ -63,12 +63,12 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 78 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 64 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 65 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 67 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
-- [Calibration & Research](categories/calibration-research.md) — 56 entries
+- [Calibration & Research](categories/calibration-research.md) — 57 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 129 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
@@ -285,6 +285,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [Jev CI triage](https://github.com/tejred213/ci-triage) ![stars](https://img.shields.io/github/stars/tejred213/ci-triage?style=flat-square&label=%E2%98%85) - CI gate: Jev decides what caused each failed test and code decides what to do about it - re-run the build for environment glitches and flaky tests, otherwise file a ticket with the owner - with a one-page HTML report per run.
 - [VerdictAD](https://github.com/sgstq0811/VerdictAD-Jev-AD) ![stars](https://img.shields.io/github/stars/sgstq0811/VerdictAD-Jev-AD?style=flat-square&label=%E2%98%85) - Industrial inspection: a training-free layer from the paper [VerdictAD](https://arxiv.org/abs/2611.02654) that asks the open Jev-style model Clef-Flash 9B `Noul` questions on whether a query image and each of its local windows show a defect against a few normal references, then multiplies the probabilities into an existing detector's image score and anomaly map, raising 4-shot Image AUROC for PatchCore, DINOv2-L, AnomalyDINO and SubspaceAD on MVTec AD, VisA and MVTec LOCO AD (68.7 to 77.5 on MVTec LOCO AD with DINOv2-L).
 - [OnlyRead](https://github.com/onlyreadai/onlyread) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/onlyreadai/onlyread?style=flat-square&label=%E2%98%85) - Browser agent security: asks Jev one `Noul` per request an AI agent's browser sends to a guarded site (does it create, modify or delete data?), lets clear reads through, refuses clear writes, and sends the uncertain band to a review model, refusing anything still unsure.
+- [SystemOne gate](https://github.com/talalkashar/systemone) ![stars](https://img.shields.io/github/stars/talalkashar/systemone?style=flat-square&label=%E2%98%85) - Pre-execution gate: any agent can be the brain, and SystemOne checks its decision before a computer-use program is allowed to run, with mock answers documented explicitly as fixed wiring rather than a model or a judgment.
 
 ### Scoring & Ranking
 
@@ -539,6 +540,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [VideoJev](https://github.com/MCG-NJU/VideoJev) ![stars](https://img.shields.io/github/stars/MCG-NJU/VideoJev?style=flat-square&label=%E2%98%85) - Video understanding: Jev-inspired System One models score temporal membership and multiple-choice answers for several queries over one shared video prefix, then decode scores into intervals and selected answers without generating text.
 - [minimind-jev](https://github.com/vicfei/minimind-jev) ![stars](https://img.shields.io/github/stars/vicfei/minimind-jev?style=flat-square&label=%E2%98%85) - Train your own: a frozen Chinese encoder behind a small trained head, published with v0.1 weights and a results table on the same 100-query protocol as jev-rag-zh-benchmark, where hosted Jev reaches nDCG@5 0.546 with a confidence interval and the trained head 0.488.
 - [Trio-Spark](https://github.com/machinefi/trio-spark) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Independent decision model: a hosted System One-compatible API whose demos ship checked-in evidence, including a simulated quadrotor that completed an obstacle course in 65 s on 25 model calls, 75.7 m flown and zero collisions, and a robot arm that finished in 13 calls with zero forbidden contacts.
+- [probascope](https://github.com/moudrkat/probascope) ![stars](https://img.shields.io/github/stars/moudrkat/probascope?style=flat-square&label=%E2%98%85) - Interpretability: runs a Jev-like model natively on an Android phone through llama.cpp, answers one question in a few hundred milliseconds, then lets you drag across the layers to see where the answer formed.
 
 ### Infra / SDKs / Integrations
 
