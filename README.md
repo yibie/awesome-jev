@@ -65,11 +65,11 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 65 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
-- [Agent Decisions](categories/agent-decisions.md) — 67 entries
+- [Agent Decisions](categories/agent-decisions.md) — 69 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
 - [Calibration & Research](categories/calibration-research.md) — 57 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 129 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 131 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
@@ -407,6 +407,8 @@ Source file: [`categories/agent-decisions.md`](categories/agent-decisions.md)
 - [Engram](https://github.com/Paras5Yadav/engram) ![stars](https://img.shields.io/github/stars/Paras5Yadav/engram?style=flat-square&label=%E2%98%85) - Agent memory: Jev decides what to retain, how observations relate, where to search and when the retrieved evidence is sufficient, while Engram supplies the durable local SQLite store, the connections and the context block for the next response.
 - [dsh-jev-goal-judge](https://github.com/kittimzhe/dsh-jev-goal-judge) ![agent: DeepSeek Harness](https://img.shields.io/badge/agent-DeepSeek%20Harness-2D5BD7?style=flat-square) ![stars](https://img.shields.io/github/stars/kittimzhe/dsh-jev-goal-judge?style=flat-square&label=%E2%98%85) - Coding agents: DeepSeek Harness plugin that judges each goal round at the turn-stopping seam with one Jev fan-out — `Noul`s on objective achieved and evidence in transcript, a progress `Score`, a same-obstacle `Noul`, an action `Choice` — and steers a budgeted fixed-template verify-complete nudge (achieved ≥ 0.75, evidence ≥ 0.6) or report-blocked nudge back into the same turn, shadow mode by default and fail-open on every degrade; a live round judgment returns in ~830ms for $0.00003, and the first live run already caught and fixed a wire-format bug before release.
 - [JevAgentHarness](https://github.com/JevAgentHarness/JevAgentHarness) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: proxy](https://img.shields.io/badge/type-proxy-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/JevAgentHarness/JevAgentHarness?style=flat-square&label=%E2%98%85) - Coding agents: local proxy that asks Jev a `Choice` on every step of an unmodified coding agent (mini-swe-agent, pi, DeepSeek Harness, Codex) on whether the step is hard, sends it to the strong model at p(hard) ≥ 0.75 and to a fast model otherwise, fits the threshold in shadow mode, and can also gate tool choice, stopping and reflection; on 74 held-out Terminal-Bench 2.0 tasks in a pre-registered test it made mini-swe-agent 64% cheaper at −2.7 points, pi 31% cheaper at +4.1 and DeepSeek Harness 28% cheaper at equal success.
+- [Nouli](https://github.com/nouli-ai/nouli) ![stars](https://img.shields.io/github/stars/nouli-ai/nouli?style=flat-square&label=%E2%98%85) - Decision networks: a Rust library, CLI and terminal app for chaining small decisions into large ones, where every step is traced rather than just the final answer.
+- [decide me](https://github.com/moudrkat/decide-me) ![stars](https://img.shields.io/github/stars/moudrkat/decide-me?style=flat-square&label=%E2%98%85) - Embodied decisions: point a phone at the street and the model proposes what to do next with a probability attached, go left 39 percent, go right 13, and the walk carries on either way.
 
 ### Data Labeling & Curation
 
@@ -675,6 +677,8 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Buddy Jev action](https://buddy.works/docs/integrations/typesafe) - Deployment pipelines: a Buddy action that asks Jev one `SCORE`, `CHOICE` or `BOOLEAN` question about a commit message, changelog or any file from the run and stores the answer and its confidence in `BUDDY_ACTION_JEV_*` variables, so a later step can, for example, require manual approval when deploy risk comes back `high` or confidence drops below 0.7.
 - [typesafe (Gleam)](https://github.com/semperos/typesafe-sdk-gleam) ![stars](https://img.shields.io/github/stars/semperos/typesafe-sdk-gleam?style=flat-square&label=%E2%98%85) - Gleam client: an unofficial SDK for the Erlang target, not published to Hex and meant to be pinned to a commit, which the first two paragraphs say plainly along with the fact that TypeSafe does not endorse it.
 - [kneejerk](https://github.com/moudrkat/kneejerk) ![stars](https://img.shields.io/github/stars/moudrkat/kneejerk?style=flat-square&label=%E2%98%85) - On-device decisions: puts a Jev-like model inside a Capacitor plugin on the phone rather than behind a server or a localhost HTTP port, and maps the alternatives it is racing - Transformers.js in the browser, Core ML on a Mac, offline ONNX runtimes.
+- [decision-cascade](https://github.com/slavabars/decision-cascade) ![stars](https://img.shields.io/github/stars/slavabars/decision-cascade?style=flat-square&label=%E2%98%85) - Local engine: a machine-native decision system in the spirit of Jev, at a stable 1.4.0 with a versioned API contract (`schema_version = "1"`), a documented pack format and two games shipped as demos.
+- [DecisionEngine](https://github.com/swisnl/DecisionEngine) ![stars](https://img.shields.io/github/stars/swisnl/DecisionEngine?style=flat-square&label=%E2%98%85) - PHP engine: Choice, Score and Noul questions asked against application state through a fluent API, with Jev as the default engine, OpenAI's Decisions API as a native alternative, and OpenAI or Anthropic models emulating the same primitives through structured output.
 
 ### Game & Simulation
 
