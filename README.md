@@ -68,7 +68,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 69 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
-- [Calibration & Research](categories/calibration-research.md) — 57 entries
+- [Calibration & Research](categories/calibration-research.md) — 58 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 131 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
@@ -543,6 +543,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [minimind-jev](https://github.com/vicfei/minimind-jev) ![stars](https://img.shields.io/github/stars/vicfei/minimind-jev?style=flat-square&label=%E2%98%85) - Train your own: a frozen Chinese encoder behind a small trained head, published with v0.1 weights and a results table on the same 100-query protocol as jev-rag-zh-benchmark, where hosted Jev reaches nDCG@5 0.546 with a confidence interval and the trained head 0.488.
 - [Trio-Spark](https://github.com/machinefi/trio-spark) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Independent decision model: a hosted System One-compatible API whose demos ship checked-in evidence, including a simulated quadrotor that completed an obstacle course in 65 s on 25 model calls, 75.7 m flown and zero collisions, and a robot arm that finished in 13 calls with zero forbidden contacts.
 - [probascope](https://github.com/moudrkat/probascope) ![stars](https://img.shields.io/github/stars/moudrkat/probascope?style=flat-square&label=%E2%98%85) - Interpretability: runs a Jev-like model natively on an Android phone through llama.cpp, answers one question in a few hundred milliseconds, then lets you drag across the layers to see where the answer formed.
+- [Valen](https://github.com/Valen-Team/Valen) ![stars](https://img.shields.io/github/stars/Valen-Team/Valen?style=flat-square&label=%E2%98%85) - Open alternative: Apache-2.0 multimodal System One models in five sizes (0.8B to 27B) that answer `choice`, `score`, and yes/no questions about text, images, and video with a probability per candidate and return a box for `bbox` questions in the same forward pass, served behind a `/v1/systemone`-compatible API with native, ONNX, and GGUF weights.
 
 ### Infra / SDKs / Integrations
 
