@@ -67,15 +67,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 69 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 50 entries
-- [Calibration & Research](categories/calibration-research.md) — 58 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 131 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 51 entries
+- [Calibration & Research](categories/calibration-research.md) — 59 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 132 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 10 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 15 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 109 entries
 
 ### Open categories still being seeded
 
@@ -481,6 +481,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Jev bias audit](https://github.com/isaacbitran/jev-bias-audit) ![stars](https://img.shields.io/github/stars/isaacbitran/jev-bias-audit?style=flat-square&label=%E2%98%85) - Counterfactual audit: 134,772 answers to prompt pairs that differ only in one identity sentence, across jev-1.13.0 and 1.14.0, finding that an identity label moves predictions 3 to 15 percentage points while an associated name moves them by fractions of a point.
 - [Jev calibration audit](https://github.com/n9omi/jev-calibration-audit) ![stars](https://img.shields.io/github/stars/n9omi/jev-calibration-audit?style=flat-square&label=%E2%98%85) - Calibration test: checks Jev's probabilities against U.S. petroleum inventory reports, where the right answer can be computed exactly from EIA data, comparing it word for word with an LLM classifier through LangChain.
 - [Jev, job by job](https://github.com/WeBuildDatabases/jev-job-by-job) ![stars](https://img.shields.io/github/stars/WeBuildDatabases/jev-job-by-job?style=flat-square&label=%E2%98%85) - Field guide: works through the twenty jobs taught by the twenty-one official cookbooks, sets its own prompts beside TypeSafe's job by job, and records what each cookbook claims next to what the model actually did.
+- [JevalKit](https://github.com/Valen-Team/JevalKit) ![stars](https://img.shields.io/github/stars/Valen-Team/JevalKit?style=flat-square&label=%E2%98%85) - Evaluation toolkit: one command runs a Jev-like model across prepared benchmarks behind a unified interface, so the datasets no longer have to be reassembled repo by repo.
 
 ### Calibration & Research
 
@@ -544,6 +545,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Trio-Spark](https://github.com/machinefi/trio-spark) ![stars](https://img.shields.io/github/stars/machinefi/trio-spark?style=flat-square&label=%E2%98%85) - Independent decision model: a hosted System One-compatible API whose demos ship checked-in evidence, including a simulated quadrotor that completed an obstacle course in 65 s on 25 model calls, 75.7 m flown and zero collisions, and a robot arm that finished in 13 calls with zero forbidden contacts.
 - [probascope](https://github.com/moudrkat/probascope) ![stars](https://img.shields.io/github/stars/moudrkat/probascope?style=flat-square&label=%E2%98%85) - Interpretability: runs a Jev-like model natively on an Android phone through llama.cpp, answers one question in a few hundred milliseconds, then lets you drag across the layers to see where the answer formed.
 - [Valen](https://github.com/Valen-Team/Valen) ![stars](https://img.shields.io/github/stars/Valen-Team/Valen?style=flat-square&label=%E2%98%85) - Open alternative: Apache-2.0 multimodal System One models in five sizes (0.8B to 27B) that answer `choice`, `score`, and yes/no questions about text, images, and video with a probability per candidate and return a box for `bbox` questions in the same forward pass, served behind a `/v1/systemone`-compatible API with native, ONNX, and GGUF weights.
+- [jev-xray](https://github.com/aishwary-dongre/jev-xray) ![stars](https://img.shields.io/github/stars/aishwary-dongre/jev-xray?style=flat-square&label=%E2%98%85) - Decision forensics: writes a report about a decision after the fact, which is needed because a Jev answer carries a calibrated probability and, by construction, no explanation - there is no text channel for it to justify itself through.
 
 ### Infra / SDKs / Integrations
 
@@ -680,6 +682,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [kneejerk](https://github.com/moudrkat/kneejerk) ![stars](https://img.shields.io/github/stars/moudrkat/kneejerk?style=flat-square&label=%E2%98%85) - On-device decisions: puts a Jev-like model inside a Capacitor plugin on the phone rather than behind a server or a localhost HTTP port, and maps the alternatives it is racing - Transformers.js in the browser, Core ML on a Mac, offline ONNX runtimes.
 - [decision-cascade](https://github.com/slavabars/decision-cascade) ![stars](https://img.shields.io/github/stars/slavabars/decision-cascade?style=flat-square&label=%E2%98%85) - Local engine: a machine-native decision system in the spirit of Jev, at a stable 1.4.0 with a versioned API contract (`schema_version = "1"`), a documented pack format and two games shipped as demos.
 - [DecisionEngine](https://github.com/swisnl/DecisionEngine) ![stars](https://img.shields.io/github/stars/swisnl/DecisionEngine?style=flat-square&label=%E2%98%85) - PHP engine: Choice, Score and Noul questions asked against application state through a fluent API, with Jev as the default engine, OpenAI's Decisions API as a native alternative, and OpenAI or Anthropic models emulating the same primitives through structured output.
+- [intern-decision-wasm](https://github.com/fusor-rs/intern-decision-wasm) ![stars](https://img.shields.io/github/stars/fusor-rs/intern-decision-wasm?style=flat-square&label=%E2%98%85) - Browser runtime: a 2B decision model running on CPU threads in a tab with no install and no server, four questions about a scanned seal decided in 3.4 seconds on an M4 Pro, and marked in development at v0.1.
 
 ### Game & Simulation
 
@@ -890,6 +893,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [awesome-jev-resources](https://github.com/karozi/awesome-jev-resources) ![stars](https://img.shields.io/github/stars/karozi/awesome-jev-resources?style=flat-square&label=%E2%98%85) - Curated list: collects Jev guides, official documentation and community projects - the fifth curated list in this catalogue, listed for the same reason as the other four.
 - [Jev Notes](https://github.com/Itachi-of-the-Leaf/JevBlog) ![stars](https://img.shields.io/github/stars/Itachi-of-the-Leaf/JevBlog?style=flat-square&label=%E2%98%85) - Explainer: a frontend-only, source-cited walkthrough of Jev, the System One model family and the published RLCD training objective behind them.
 - [awesome-ai-quant](https://github.com/vicfei/awesome-ai-quant) ![stars](https://img.shields.io/github/stars/vicfei/awesome-ai-quant?style=flat-square&label=%E2%98%85) - Curated list: a bilingual map of quantitative finance for AI engineers, whose decision-models section tracks where Jev already sits in trading stacks - TradingAgents screens social posts with it, ai-hedge-fund lists it as a provider - alongside LLM factor mining and tabular foundation models.
+- [Awesome Decision Models](https://github.com/AnotiaWang/awesome-decision-models) ![stars](https://img.shields.io/github/stars/AnotiaWang/awesome-decision-models?style=flat-square&label=%E2%98%85) - Curated list: the widest catalogue of these models with the APIs, runtimes and tooling around them, CC0 and community-maintained, and explicit that it is unaffiliated with any model provider.
 
 ## Submission format
 
