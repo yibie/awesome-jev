@@ -72,10 +72,10 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 132 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
-- [Finance & Trading](categories/finance-trading.md) — 10 entries
+- [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 15 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 109 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 110 entries
 
 ### Open categories still being seeded
 
@@ -748,6 +748,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [Polymarket BTC 5m Jev trader](https://github.com/VGabriel45/polymarket-btc5m-jev-trading) ![stars](https://img.shields.io/github/stars/VGabriel45/polymarket-btc5m-jev-trading?style=flat-square&label=%E2%98%85) - Prediction markets: a trading agent for Polymarket's five-minute BTC up/down markets that puts Jev in the decision layer behind a terminal UI.
 - [sec-8k-filings-and-decision-models](https://github.com/magilliam27/sec-8k-filings-and-decision-models) ![stars](https://img.shields.io/github/stars/magilliam27/sec-8k-filings-and-decision-models?style=flat-square&label=%E2%98%85) - Finance research: asks one five-option Jev Choice how good or bad each of 26,962 S&P 500 8-K filings is for shareholders, and finds the probability-weighted rating has a rank correlation of +0.025 (95% interval +0.015 to +0.034) with the next two days' market-adjusted return.
 - [JEV Trading Command Center](https://github.com/mars-tw/jev-trading-command-center) ![stars](https://img.shields.io/github/stars/mars-tw/jev-trading-command-center?style=flat-square&label=%E2%98%85) - Paper trading: a research app where Jev decisions drive a simulated broker, with no exchange order routing at all, so the decisions can be studied without risking anything real.
+- [Jev Paper Trader](https://github.com/MojoAI-King/jev-paper-trader) ![stars](https://img.shields.io/github/stars/MojoAI-King/jev-paper-trader?style=flat-square&label=%E2%98%85) - Paper trading: a fake hundred-thousand-dollar bankroll on real Polymarket and Kalshi markets with Jev as the judge, reading only public prices and placing no orders, to see whether a model fed by a research agent can pick.
 
 ### Compliance & Legal
 
@@ -894,6 +895,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Jev Notes](https://github.com/Itachi-of-the-Leaf/JevBlog) ![stars](https://img.shields.io/github/stars/Itachi-of-the-Leaf/JevBlog?style=flat-square&label=%E2%98%85) - Explainer: a frontend-only, source-cited walkthrough of Jev, the System One model family and the published RLCD training objective behind them.
 - [awesome-ai-quant](https://github.com/vicfei/awesome-ai-quant) ![stars](https://img.shields.io/github/stars/vicfei/awesome-ai-quant?style=flat-square&label=%E2%98%85) - Curated list: a bilingual map of quantitative finance for AI engineers, whose decision-models section tracks where Jev already sits in trading stacks - TradingAgents screens social posts with it, ai-hedge-fund lists it as a provider - alongside LLM factor mining and tabular foundation models.
 - [Awesome Decision Models](https://github.com/AnotiaWang/awesome-decision-models) ![stars](https://img.shields.io/github/stars/AnotiaWang/awesome-decision-models?style=flat-square&label=%E2%98%85) - Curated list: the widest catalogue of these models with the APIs, runtimes and tooling around them, CC0 and community-maintained, and explicit that it is unaffiliated with any model provider.
+- [awesome-jev directory](https://github.com/hellogumbo/awesome-jev) ![stars](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: its README counts 1,686 entries with a searchable site and stars refreshed daily, CC0 and explicitly unaffiliated with TypeSafe.
 
 ## Submission format
 
