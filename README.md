@@ -63,13 +63,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 78 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 65 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 66 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 69 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 51 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 52 entries
 - [Calibration & Research](categories/calibration-research.md) — 59 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 132 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 133 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
@@ -286,6 +286,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [VerdictAD](https://github.com/sgstq0811/VerdictAD-Jev-AD) ![stars](https://img.shields.io/github/stars/sgstq0811/VerdictAD-Jev-AD?style=flat-square&label=%E2%98%85) - Industrial inspection: a training-free layer from the paper [VerdictAD](https://arxiv.org/abs/2611.02654) that asks the open Jev-style model Clef-Flash 9B `Noul` questions on whether a query image and each of its local windows show a defect against a few normal references, then multiplies the probabilities into an existing detector's image score and anomaly map, raising 4-shot Image AUROC for PatchCore, DINOv2-L, AnomalyDINO and SubspaceAD on MVTec AD, VisA and MVTec LOCO AD (68.7 to 77.5 on MVTec LOCO AD with DINOv2-L).
 - [OnlyRead](https://github.com/onlyreadai/onlyread) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/onlyreadai/onlyread?style=flat-square&label=%E2%98%85) - Browser agent security: asks Jev one `Noul` per request an AI agent's browser sends to a guarded site (does it create, modify or delete data?), lets clear reads through, refuses clear writes, and sends the uncertain band to a review model, refusing anything still unsure.
 - [SystemOne gate](https://github.com/talalkashar/systemone) ![stars](https://img.shields.io/github/stars/talalkashar/systemone?style=flat-square&label=%E2%98%85) - Pre-execution gate: any agent can be the brain, and SystemOne checks its decision before a computer-use program is allowed to run, with mock answers documented explicitly as fixed wiring rather than a model or a judgment.
+- [jevban](https://github.com/FMXExpress/JevBan) ![stars](https://img.shields.io/github/stars/FMXExpress/JevBan?style=flat-square&label=%E2%98%85) - Security: reads web server access logs, spots clients probing for holes, asks a decision model whether each one is really attacking, and bans the ones it convicts - fail2ban with a judge, written in Pascal.
 
 ### Scoring & Ranking
 
@@ -482,6 +483,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Jev calibration audit](https://github.com/n9omi/jev-calibration-audit) ![stars](https://img.shields.io/github/stars/n9omi/jev-calibration-audit?style=flat-square&label=%E2%98%85) - Calibration test: checks Jev's probabilities against U.S. petroleum inventory reports, where the right answer can be computed exactly from EIA data, comparing it word for word with an LLM classifier through LangChain.
 - [Jev, job by job](https://github.com/WeBuildDatabases/jev-job-by-job) ![stars](https://img.shields.io/github/stars/WeBuildDatabases/jev-job-by-job?style=flat-square&label=%E2%98%85) - Field guide: works through the twenty jobs taught by the twenty-one official cookbooks, sets its own prompts beside TypeSafe's job by job, and records what each cookbook claims next to what the model actually did.
 - [JevalKit](https://github.com/Valen-Team/JevalKit) ![stars](https://img.shields.io/github/stars/Valen-Team/JevalKit?style=flat-square&label=%E2%98%85) - Evaluation toolkit: one command runs a Jev-like model across prepared benchmarks behind a unified interface, so the datasets no longer have to be reassembled repo by repo.
+- [Jev Drive Lab](https://github.com/BrendanH18/jev_fsd) ![stars](https://img.shields.io/github/stars/BrendanH18/jev_fsd?style=flat-square&label=%E2%98%85) - Driving test: real Canadian streets, the same car and the same marking rules, handed to a hand-written rule set, a decision model or to you - so a difference in the result is a difference in decisions.
 
 ### Calibration & Research
 
@@ -683,6 +685,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [decision-cascade](https://github.com/slavabars/decision-cascade) ![stars](https://img.shields.io/github/stars/slavabars/decision-cascade?style=flat-square&label=%E2%98%85) - Local engine: a machine-native decision system in the spirit of Jev, at a stable 1.4.0 with a versioned API contract (`schema_version = "1"`), a documented pack format and two games shipped as demos.
 - [DecisionEngine](https://github.com/swisnl/DecisionEngine) ![stars](https://img.shields.io/github/stars/swisnl/DecisionEngine?style=flat-square&label=%E2%98%85) - PHP engine: Choice, Score and Noul questions asked against application state through a fluent API, with Jev as the default engine, OpenAI's Decisions API as a native alternative, and OpenAI or Anthropic models emulating the same primitives through structured output.
 - [intern-decision-wasm](https://github.com/fusor-rs/intern-decision-wasm) ![stars](https://img.shields.io/github/stars/fusor-rs/intern-decision-wasm?style=flat-square&label=%E2%98%85) - Browser runtime: a 2B decision model running on CPU threads in a tab with no install and no server, four questions about a scanned seal decided in 3.4 seconds on an M4 Pro, and marked in development at v0.1.
+- [JEV Broker](https://github.com/AlekseiUL/jev-broker) ![stars](https://img.shields.io/github/stars/AlekseiUL/jev-broker?style=flat-square&label=%E2%98%85) - MCP tool: a local HTTP server for agents on Hermes where the agent collects its own evidence before asking, published as a standalone version of a working setup rather than a copy of one.
 
 ### Game & Simulation
 
