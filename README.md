@@ -61,21 +61,21 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 78 entries
+- [Classification & Routing](categories/classification-routing.md) — 79 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 66 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
 - [Agent Decisions](categories/agent-decisions.md) — 69 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 52 entries
-- [Calibration & Research](categories/calibration-research.md) — 59 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
+- [Calibration & Research](categories/calibration-research.md) — 60 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 133 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 15 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 110 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 111 entries
 
 ### Open categories still being seeded
 
@@ -198,6 +198,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [SpotAsk](https://github.com/shiquda/SpotAsk) ![stars](https://img.shields.io/github/stars/shiquda/SpotAsk?style=flat-square&label=%E2%98%85) - Query routing: a native macOS menu bar assistant that asks Jev a typed `Choice` over your configured channels to decide whether a question is answered in the app or sent to a web AI, desktop app, or CLI agent, with confirmation by default and optional auto-routing above a confidence threshold.
 - [Jev Router](https://github.com/AIAnytime/Jev-Router) ![stars](https://img.shields.io/github/stars/AIAnytime/Jev-Router?style=flat-square&label=%E2%98%85) - Model router: one OpenAI-compatible endpoint that sends each request to the right model, choosing with typed decisions that carry real probabilities.
 - [typesafe-cascade](https://github.com/monumei/typesafe-cascade) ![stars](https://img.shields.io/github/stars/monumei/typesafe-cascade?style=flat-square&label=%E2%98%85) - Cascade: sends every classification to a typed `Choice` first and only escalates to a reasoning model when Jev's confidence fails to clear a threshold, which is the pattern most projects here reimplement without naming it.
+- [pi-sieve](https://github.com/DrMkdaddy/pi-sieve) ![stars](https://img.shields.io/github/stars/DrMkdaddy/pi-sieve?style=flat-square&label=%E2%98%85) - Routing: semantic routing and a hybrid Jev/Clef compaction step inside the Pi coding agent's own tooling, alongside a guardrail suite.
 
 ### Adaptive & Realtime UI
 
@@ -484,6 +485,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [Jev, job by job](https://github.com/WeBuildDatabases/jev-job-by-job) ![stars](https://img.shields.io/github/stars/WeBuildDatabases/jev-job-by-job?style=flat-square&label=%E2%98%85) - Field guide: works through the twenty jobs taught by the twenty-one official cookbooks, sets its own prompts beside TypeSafe's job by job, and records what each cookbook claims next to what the model actually did.
 - [JevalKit](https://github.com/Valen-Team/JevalKit) ![stars](https://img.shields.io/github/stars/Valen-Team/JevalKit?style=flat-square&label=%E2%98%85) - Evaluation toolkit: one command runs a Jev-like model across prepared benchmarks behind a unified interface, so the datasets no longer have to be reassembled repo by repo.
 - [Jev Drive Lab](https://github.com/BrendanH18/jev_fsd) ![stars](https://img.shields.io/github/stars/BrendanH18/jev_fsd?style=flat-square&label=%E2%98%85) - Driving test: real Canadian streets, the same car and the same marking rules, handed to a hand-written rule set, a decision model or to you - so a difference in the result is a difference in decisions.
+- [Jev Eval Lab](https://github.com/soraaa013-ops/jev-eval-lab) ![stars](https://img.shields.io/github/stars/soraaa013-ops/jev-eval-lab?style=flat-square&label=%E2%98%85) - Testbed: compares typed judges, generative LLM judges and deterministic baselines on the same pairwise tasks while preserving raw responses, request hashes, latency, probabilities and model versions - and says its focus is evaluation, not that Jev should replace an LLM.
 
 ### Calibration & Research
 
@@ -548,6 +550,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [probascope](https://github.com/moudrkat/probascope) ![stars](https://img.shields.io/github/stars/moudrkat/probascope?style=flat-square&label=%E2%98%85) - Interpretability: runs a Jev-like model natively on an Android phone through llama.cpp, answers one question in a few hundred milliseconds, then lets you drag across the layers to see where the answer formed.
 - [Valen](https://github.com/Valen-Team/Valen) ![stars](https://img.shields.io/github/stars/Valen-Team/Valen?style=flat-square&label=%E2%98%85) - Open alternative: Apache-2.0 multimodal System One models in five sizes (0.8B to 27B) that answer `choice`, `score`, and yes/no questions about text, images, and video with a probability per candidate and return a box for `bbox` questions in the same forward pass, served behind a `/v1/systemone`-compatible API with native, ONNX, and GGUF weights.
 - [jev-xray](https://github.com/aishwary-dongre/jev-xray) ![stars](https://img.shields.io/github/stars/aishwary-dongre/jev-xray?style=flat-square&label=%E2%98%85) - Decision forensics: writes a report about a decision after the fact, which is needed because a Jev answer carries a calibrated probability and, by construction, no explanation - there is no text channel for it to justify itself through.
+- [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) ![stars](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&label=%E2%98%85) - Prototype: a System One decision model targeting Qwen3.5-0.8B-Base, with a document that separates what comes from TypeSafe's own documentation from what the author measured, and a milestone table marking what is not built yet.
 
 ### Infra / SDKs / Integrations
 
@@ -899,6 +902,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [awesome-ai-quant](https://github.com/vicfei/awesome-ai-quant) ![stars](https://img.shields.io/github/stars/vicfei/awesome-ai-quant?style=flat-square&label=%E2%98%85) - Curated list: a bilingual map of quantitative finance for AI engineers, whose decision-models section tracks where Jev already sits in trading stacks - TradingAgents screens social posts with it, ai-hedge-fund lists it as a provider - alongside LLM factor mining and tabular foundation models.
 - [Awesome Decision Models](https://github.com/AnotiaWang/awesome-decision-models) ![stars](https://img.shields.io/github/stars/AnotiaWang/awesome-decision-models?style=flat-square&label=%E2%98%85) - Curated list: the widest catalogue of these models with the APIs, runtimes and tooling around them, CC0 and community-maintained, and explicit that it is unaffiliated with any model provider.
 - [awesome-jev directory](https://github.com/hellogumbo/awesome-jev) ![stars](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: its README counts 1,686 entries with a searchable site and stars refreshed daily, CC0 and explicitly unaffiliated with TypeSafe.
+- [Jev Guide](https://github.com/2456868764/jevguide) ![stars](https://img.shields.io/github/stars/2456868764/jevguide?style=flat-square&label=%E2%98%85) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
 
 ## Submission format
 
