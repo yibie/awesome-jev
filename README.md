@@ -63,13 +63,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Classification & Routing](categories/classification-routing.md) — 79 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 66 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 67 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
-- [Agent Decisions](categories/agent-decisions.md) — 69 entries
+- [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
-- [Calibration & Research](categories/calibration-research.md) — 60 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 133 entries
+- [Calibration & Research](categories/calibration-research.md) — 61 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 134 entries
 - [Game & Simulation](categories/game-simulation.md) — 29 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
@@ -288,6 +288,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [OnlyRead](https://github.com/onlyreadai/onlyread) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/onlyreadai/onlyread?style=flat-square&label=%E2%98%85) - Browser agent security: asks Jev one `Noul` per request an AI agent's browser sends to a guarded site (does it create, modify or delete data?), lets clear reads through, refuses clear writes, and sends the uncertain band to a review model, refusing anything still unsure.
 - [SystemOne gate](https://github.com/talalkashar/systemone) ![stars](https://img.shields.io/github/stars/talalkashar/systemone?style=flat-square&label=%E2%98%85) - Pre-execution gate: any agent can be the brain, and SystemOne checks its decision before a computer-use program is allowed to run, with mock answers documented explicitly as fixed wiring rather than a model or a judgment.
 - [jevban](https://github.com/FMXExpress/JevBan) ![stars](https://img.shields.io/github/stars/FMXExpress/JevBan?style=flat-square&label=%E2%98%85) - Security: reads web server access logs, spots clients probing for holes, asks a decision model whether each one is really attacking, and bans the ones it convicts - fail2ban with a judge, written in Pascal.
+- [AgentBeam](https://github.com/whyashthakker/beam-cli) ![stars](https://img.shields.io/github/stars/whyashthakker/beam-cli?style=flat-square&label=%E2%98%85) - Agent security: installs hooks into twenty-seven agent harnesses and can optionally route a proposed action through Jev first, asking two independent Noul risk questions or scoring it against a damage rubric.
 
 ### Scoring & Ranking
 
@@ -411,6 +412,7 @@ Source file: [`categories/agent-decisions.md`](categories/agent-decisions.md)
 - [JevAgentHarness](https://github.com/JevAgentHarness/JevAgentHarness) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: proxy](https://img.shields.io/badge/type-proxy-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/JevAgentHarness/JevAgentHarness?style=flat-square&label=%E2%98%85) - Coding agents: local proxy that asks Jev a `Choice` on every step of an unmodified coding agent (mini-swe-agent, pi, DeepSeek Harness, Codex) on whether the step is hard, sends it to the strong model at p(hard) ≥ 0.75 and to a fast model otherwise, fits the threshold in shadow mode, and can also gate tool choice, stopping and reflection; on 74 held-out Terminal-Bench 2.0 tasks in a pre-registered test it made mini-swe-agent 64% cheaper at −2.7 points, pi 31% cheaper at +4.1 and DeepSeek Harness 28% cheaper at equal success.
 - [Nouli](https://github.com/nouli-ai/nouli) ![stars](https://img.shields.io/github/stars/nouli-ai/nouli?style=flat-square&label=%E2%98%85) - Decision networks: a Rust library, CLI and terminal app for chaining small decisions into large ones, where every step is traced rather than just the final answer.
 - [decide me](https://github.com/moudrkat/decide-me) ![stars](https://img.shields.io/github/stars/moudrkat/decide-me?style=flat-square&label=%E2%98%85) - Embodied decisions: point a phone at the street and the model proposes what to do next with a probability attached, go left 39 percent, go right 13, and the walk carries on either way.
+- [AmberFlow](https://github.com/Johnly1986/AmberFlow) ![stars](https://img.shields.io/github/stars/Johnly1986/AmberFlow?style=flat-square&label=%E2%98%85) - Browser execution: the flow is frozen before the run, the model only picks elements and assesses risk, and it neither generates actions nor decides that the task is done - every run leaves readable, replayable evidence.
 
 ### Data Labeling & Curation
 
@@ -551,6 +553,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Valen](https://github.com/Valen-Team/Valen) ![stars](https://img.shields.io/github/stars/Valen-Team/Valen?style=flat-square&label=%E2%98%85) - Open alternative: Apache-2.0 multimodal System One models in five sizes (0.8B to 27B) that answer `choice`, `score`, and yes/no questions about text, images, and video with a probability per candidate and return a box for `bbox` questions in the same forward pass, served behind a `/v1/systemone`-compatible API with native, ONNX, and GGUF weights.
 - [jev-xray](https://github.com/aishwary-dongre/jev-xray) ![stars](https://img.shields.io/github/stars/aishwary-dongre/jev-xray?style=flat-square&label=%E2%98%85) - Decision forensics: writes a report about a decision after the fact, which is needed because a Jev answer carries a calibrated probability and, by construction, no explanation - there is no text channel for it to justify itself through.
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) ![stars](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&label=%E2%98%85) - Prototype: a System One decision model targeting Qwen3.5-0.8B-Base, with a document that separates what comes from TypeSafe's own documentation from what the author measured, and a milestone table marking what is not built yet.
+- [Korean sentiment study](https://github.com/keyanwu256-eng/Jev-Korean-Sentiment-Analysis) ![stars](https://img.shields.io/github/stars/keyanwu256-eng/Jev-Korean-Sentiment-Analysis?style=flat-square&label=%E2%98%85) - Comparison: mixed Korean reviews scored by a Korean-capable model and by OpenJevX as a control, on eighteen self-written test sentences, with the caveat that a small self-authored set does not mean the service is accurate.
 
 ### Infra / SDKs / Integrations
 
@@ -689,6 +692,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [DecisionEngine](https://github.com/swisnl/DecisionEngine) ![stars](https://img.shields.io/github/stars/swisnl/DecisionEngine?style=flat-square&label=%E2%98%85) - PHP engine: Choice, Score and Noul questions asked against application state through a fluent API, with Jev as the default engine, OpenAI's Decisions API as a native alternative, and OpenAI or Anthropic models emulating the same primitives through structured output.
 - [intern-decision-wasm](https://github.com/fusor-rs/intern-decision-wasm) ![stars](https://img.shields.io/github/stars/fusor-rs/intern-decision-wasm?style=flat-square&label=%E2%98%85) - Browser runtime: a 2B decision model running on CPU threads in a tab with no install and no server, four questions about a scanned seal decided in 3.4 seconds on an M4 Pro, and marked in development at v0.1.
 - [JEV Broker](https://github.com/AlekseiUL/jev-broker) ![stars](https://img.shields.io/github/stars/AlekseiUL/jev-broker?style=flat-square&label=%E2%98%85) - MCP tool: a local HTTP server for agents on Hermes where the agent collects its own evidence before asking, published as a standalone version of a working setup rather than a copy of one.
+- [IC-Verdict](https://github.com/humandebri/IC-OpenJev) ![stars](https://img.shields.io/github/stars/humandebri/IC-OpenJev?style=flat-square&label=%E2%98%85) - ICP canister: Choice, Noul and Score implemented in Rust on the Internet Computer, answering queries from other canisters and charging in cycles rather than tokens.
 
 ### Game & Simulation
 
