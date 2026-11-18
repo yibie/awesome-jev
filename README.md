@@ -69,13 +69,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
 - [Calibration & Research](categories/calibration-research.md) — 61 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 134 entries
-- [Game & Simulation](categories/game-simulation.md) — 29 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 135 entries
+- [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 15 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 111 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 112 entries
 
 ### Open categories still being seeded
 
@@ -693,6 +693,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [intern-decision-wasm](https://github.com/fusor-rs/intern-decision-wasm) ![stars](https://img.shields.io/github/stars/fusor-rs/intern-decision-wasm?style=flat-square&label=%E2%98%85) - Browser runtime: a 2B decision model running on CPU threads in a tab with no install and no server, four questions about a scanned seal decided in 3.4 seconds on an M4 Pro, and marked in development at v0.1.
 - [JEV Broker](https://github.com/AlekseiUL/jev-broker) ![stars](https://img.shields.io/github/stars/AlekseiUL/jev-broker?style=flat-square&label=%E2%98%85) - MCP tool: a local HTTP server for agents on Hermes where the agent collects its own evidence before asking, published as a standalone version of a working setup rather than a copy of one.
 - [IC-Verdict](https://github.com/humandebri/IC-OpenJev) ![stars](https://img.shields.io/github/stars/humandebri/IC-OpenJev?style=flat-square&label=%E2%98%85) - ICP canister: Choice, Noul and Score implemented in Rust on the Internet Computer, answering queries from other canisters and charging in cycles rather than tokens.
+- [Tenbin](https://github.com/simota/tenbin) ![stars](https://img.shields.io/github/stars/simota/tenbin?style=flat-square&label=%E2%98%85) - Coding-agent kit: a stdio MCP server with question lint, single and batch evaluation for threshold calibration, plus a skill that decomposes a judgement into templates and lints them offline.
 
 ### Game & Simulation
 
@@ -727,6 +728,7 @@ Source file: [`categories/game-simulation.md`](categories/game-simulation.md)
 - [AI Hold'em](https://www.aiholdem.gg) - Gaming: browser-based Texas Hold'em where a TypeSafe Jev bot receives structured hand state and a typed `Choice` over complete legal moves and bet sizes, with the poker engine validating the selected action before it is applied ([source](https://github.com/jonime/ai-holdem)).
 - [jeff-ink](https://github.com/saembit/jeff-ink) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/saembit/jeff-ink?style=flat-square&label=%E2%98%85) - Interactive fiction: inkjs wrapper where every line the player types is one request, a `Choice` over the story's current authored choices plus none and two `Noul`s for asking for help and talking outside the story, so the parser understands free text while the story can only go where the author wrote it.
 - [Jev Valley](https://github.com/Sarthak8696/jev-valley) ![stars](https://img.shields.io/github/stars/Sarthak8696/jev-valley?style=flat-square&label=%E2%98%85) - Ecosystem simulation: every rabbit, deer and wolf asks Jev a `Choice` for its action each hour plus `Score` (alertness, how weak prey looks, chase effort) and `Noul` (breeding, will a wolf attack) questions that change what happens and are scored against ground truth, an animal can freeze when Jev's confidence is below a threshold, and any failed call stops the run rather than falling back to a guess.
+- [lil guy machine](https://github.com/Dunni3/lil_guy_machine) ![stars](https://img.shields.io/github/stars/Dunni3/lil_guy_machine?style=flat-square&label=%E2%98%85) - Life simulation: a small character in a small room whose every choice - when to eat, when to sleep, what to make and sell - is made by a model behind any OpenAI-compatible endpoint, running in a window or ambiently on a Google TV Streamer.
 
 ### Robotics & Physical
 
@@ -907,6 +909,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Awesome Decision Models](https://github.com/AnotiaWang/awesome-decision-models) ![stars](https://img.shields.io/github/stars/AnotiaWang/awesome-decision-models?style=flat-square&label=%E2%98%85) - Curated list: the widest catalogue of these models with the APIs, runtimes and tooling around them, CC0 and community-maintained, and explicit that it is unaffiliated with any model provider.
 - [awesome-jev directory](https://github.com/hellogumbo/awesome-jev) ![stars](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: its README counts 1,686 entries with a searchable site and stars refreshed daily, CC0 and explicitly unaffiliated with TypeSafe.
 - [Jev Guide](https://github.com/2456868764/jevguide) ![stars](https://img.shields.io/github/stars/2456868764/jevguide?style=flat-square&label=%E2%98%85) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
+- [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) ![stars](https://img.shields.io/github/stars/Jev-Engineering/cookbook?style=flat-square&label=%E2%98%85) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
 
 ## Submission format
 
