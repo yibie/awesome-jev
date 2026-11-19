@@ -64,12 +64,12 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Classification & Routing](categories/classification-routing.md) — 79 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 67 entries
-- [Scoring & Ranking](categories/scoring-ranking.md) — 44 entries
+- [Scoring & Ranking](categories/scoring-ranking.md) — 45 entries
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
-- [Calibration & Research](categories/calibration-research.md) — 61 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 135 entries
+- [Calibration & Research](categories/calibration-research.md) — 62 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 137 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
@@ -338,6 +338,7 @@ Source file: [`categories/scoring-ranking.md`](categories/scoring-ranking.md)
 - [dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) ![agent: DeepSeek Harness](https://img.shields.io/badge/agent-DeepSeek%20Harness-2D5BD7?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/luobosibing2/dsh-jev-plugin?style=flat-square&label=%E2%98%85) - Coding agents: asks Jev a `Noul` for each skill summary or original glob path, orders candidates by the returned relevance probability, and supplies the selected skills or ranked paths to DeepSeek Harness, with all features disabled by default.
 - [JevRanker](https://github.com/hgqimo/JevRanker) ![stars](https://img.shields.io/github/stars/hgqimo/JevRanker?style=flat-square&label=%E2%98%85) - Retrieval and RAG: an open-source port of Jev's typed-decision format ([NanoJev](https://github.com/TianyuCodings/NanoJev)'s Qwen3-0.6B, trained on T2Ranking, no hosted API call) that replaces the LLM comparator inside two published search rerankers, BlitzRank's tournament graph and Reranker-Guided Search, where each match is one `Choice` scored over k candidate paths in a single forward pass with zero decoded tokens, reaching 0.6309 nDCG@10 on T2Ranking dev against 0.2162 for the same 0.6B decoding a RankGPT listwise prompt, at 34 ms instead of 752 ms per match and 8.6-9.4x lower per-query latency inside RGS.
 - [Jev vs embeddings for page selection](https://sayora.ai/many-hands/jev-vs-embeddings/) - Production replacement: across 168 caller questions on four small-business websites Jev put the right page first 88% of the time against 70% for production embeddings, and handed the model the wrong page a tenth as often.
+- [OpenJev playground](https://github.com/SiliconLabAI/OpenJev) ![stars](https://img.shields.io/github/stars/SiliconLabAI/OpenJev?style=flat-square&label=%E2%98%85) - Playground: state plus typed questions across three backends, including a parallel mode that makes one tiny probability call per option and softmaxes the results.
 
 ### Agent Decisions
 
@@ -554,6 +555,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [jev-xray](https://github.com/aishwary-dongre/jev-xray) ![stars](https://img.shields.io/github/stars/aishwary-dongre/jev-xray?style=flat-square&label=%E2%98%85) - Decision forensics: writes a report about a decision after the fact, which is needed because a Jev answer carries a calibrated probability and, by construction, no explanation - there is no text channel for it to justify itself through.
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) ![stars](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&label=%E2%98%85) - Prototype: a System One decision model targeting Qwen3.5-0.8B-Base, with a document that separates what comes from TypeSafe's own documentation from what the author measured, and a milestone table marking what is not built yet.
 - [Korean sentiment study](https://github.com/keyanwu256-eng/Jev-Korean-Sentiment-Analysis) ![stars](https://img.shields.io/github/stars/keyanwu256-eng/Jev-Korean-Sentiment-Analysis?style=flat-square&label=%E2%98%85) - Comparison: mixed Korean reviews scored by a Korean-capable model and by OpenJevX as a control, on eighteen self-written test sentences, with the caveat that a small self-authored set does not mean the service is accurate.
+- [OpenJev](https://github.com/razorback16/openjev) ![stars](https://img.shields.io/github/stars/razorback16/openjev?style=flat-square&label=%E2%98%85) - Decision server: reads answers straight from the model's probabilities instead of parsing text, so an answer cannot fall outside the schema, and returns a probability plus a confidence in tens of milliseconds.
 
 ### Infra / SDKs / Integrations
 
@@ -694,6 +696,8 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [JEV Broker](https://github.com/AlekseiUL/jev-broker) ![stars](https://img.shields.io/github/stars/AlekseiUL/jev-broker?style=flat-square&label=%E2%98%85) - MCP tool: a local HTTP server for agents on Hermes where the agent collects its own evidence before asking, published as a standalone version of a working setup rather than a copy of one.
 - [IC-Verdict](https://github.com/humandebri/IC-OpenJev) ![stars](https://img.shields.io/github/stars/humandebri/IC-OpenJev?style=flat-square&label=%E2%98%85) - ICP canister: Choice, Noul and Score implemented in Rust on the Internet Computer, answering queries from other canisters and charging in cycles rather than tokens.
 - [Tenbin](https://github.com/simota/tenbin) ![stars](https://img.shields.io/github/stars/simota/tenbin?style=flat-square&label=%E2%98%85) - Coding-agent kit: a stdio MCP server with question lint, single and batch evaluation for threshold calibration, plus a skill that decomposes a judgement into templates and lints them offline.
+- [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) ![stars](https://img.shields.io/github/stars/typesafe-ai/typesafe-sdk-python?style=flat-square&label=%E2%98%85) - Official SDK: the first-party Python client for the API, installable from PyPI and the base many Python entries here would otherwise vendor for themselves.
+- [openjev-sglang](https://github.com/ekzhang/openjev-sglang) ![stars](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&label=%E2%98%85) - Serving: a server implementing the same HTTP API on Qwen3.6-35B-A3B through SGLang, one container per B200, with a note that it started as an early reproduction and that SGLang now ships the capability natively.
 
 ### Game & Simulation
 
