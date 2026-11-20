@@ -79,7 +79,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ### Open categories still being seeded
 
-- [Scientific Pipelines](categories/scientific-pipelines.md) — 0 entries
+- [Scientific Pipelines](categories/scientific-pipelines.md) — 1 entry
 
 Each entry lives in exactly one category. When a project could fit multiple categories, we choose the one closest to its direct application domain.
 
