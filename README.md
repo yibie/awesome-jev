@@ -68,14 +68,14 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
-- [Calibration & Research](categories/calibration-research.md) — 62 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 137 entries
+- [Calibration & Research](categories/calibration-research.md) — 63 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 138 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
-- [Content Moderation](categories/content-moderation.md) — 15 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 112 entries
+- [Content Moderation](categories/content-moderation.md) — 16 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 113 entries
 
 ### Open categories still being seeded
 
@@ -556,6 +556,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd) ![stars](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&label=%E2%98%85) - Prototype: a System One decision model targeting Qwen3.5-0.8B-Base, with a document that separates what comes from TypeSafe's own documentation from what the author measured, and a milestone table marking what is not built yet.
 - [Korean sentiment study](https://github.com/keyanwu256-eng/Jev-Korean-Sentiment-Analysis) ![stars](https://img.shields.io/github/stars/keyanwu256-eng/Jev-Korean-Sentiment-Analysis?style=flat-square&label=%E2%98%85) - Comparison: mixed Korean reviews scored by a Korean-capable model and by OpenJevX as a control, on eighteen self-written test sentences, with the caveat that a small self-authored set does not mean the service is accurate.
 - [OpenJev](https://github.com/razorback16/openjev) ![stars](https://img.shields.io/github/stars/razorback16/openjev?style=flat-square&label=%E2%98%85) - Decision server: reads answers straight from the model's probabilities instead of parsing text, so an answer cannot fall outside the schema, and returns a probability plus a confidence in tens of milliseconds.
+- [SearchJev](https://github.com/EvoScientist/SearchJev) ![stars](https://img.shields.io/github/stars/EvoScientist/SearchJev?style=flat-square&label=%E2%98%85) - Training code: turns a search agent's short decisions - is this document relevant, is the evidence sufficient, which link next - into schema-conditioned typed prediction, returning a calibrated distribution in one forward pass with no autoregressive decoding.
 
 ### Infra / SDKs / Integrations
 
@@ -698,6 +699,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Tenbin](https://github.com/simota/tenbin) ![stars](https://img.shields.io/github/stars/simota/tenbin?style=flat-square&label=%E2%98%85) - Coding-agent kit: a stdio MCP server with question lint, single and batch evaluation for threshold calibration, plus a skill that decomposes a judgement into templates and lints them offline.
 - [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) ![stars](https://img.shields.io/github/stars/typesafe-ai/typesafe-sdk-python?style=flat-square&label=%E2%98%85) - Official SDK: the first-party Python client for the API, installable from PyPI and the base many Python entries here would otherwise vendor for themselves.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) ![stars](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&label=%E2%98%85) - Serving: a server implementing the same HTTP API on Qwen3.6-35B-A3B through SGLang, one container per B200, with a note that it started as an early reproduction and that SGLang now ships the capability natively.
+- [Typewright](https://github.com/Jev-Engineering/TypeWright) ![stars](https://img.shields.io/github/stars/Jev-Engineering/TypeWright?style=flat-square&label=%E2%98%85) - Compiler: declare the state, the decisions and labelled examples, and it compiles typed questions, measures them and ships a JSON program.
 
 ### Game & Simulation
 
@@ -797,6 +799,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [Jev X Blocker](https://github.com/bit-cook/Jev-X-Blocker) ![stars](https://img.shields.io/github/stars/bit-cook/Jev-X-Blocker?style=flat-square&label=%E2%98%85) - Local moderation: a Chrome MV3 extension that uses your own Jev key to hide high-confidence sexual and solicitation content on X, covering posts as well as replies, with a recoverable placeholder rather than a silent removal.
 - [jev-multilingual-benchmark](https://github.com/webmaster-ramos/jev-multilingual-benchmark) ![stars](https://img.shields.io/github/stars/webmaster-ramos/jev-multilingual-benchmark?style=flat-square&label=%E2%98%85) - E-commerce moderation: reproducible benchmark that asks `jev-1.13.0` a `Noul` flag plus category and language `Choice` and a severity `Score` on a store's display names and comments in 25 languages, against chat and guard models and scored only on blind-verified items, finding one false positive on 360 clean texts and 94.0% on 520 comments in eight languages, while a bare native swear word in a name field is caught in 21 of 27 cases in English, Spanish, Russian, Japanese and Chinese but 15 of 80 in the other sixteen languages, written up at [webmaster-ramos.com](https://webmaster-ramos.com/blog/decision-model-in-your-customers-language).
 - [jev-guard](https://github.com/Alex-Alas/jev-guard) ![stars](https://img.shields.io/github/stars/Alex-Alas/jev-guard?style=flat-square&label=%E2%98%85) - Live subtitles: sits between the speech-to-text engine and the display of a live broadcast, filtering profanity in English and Spanish before a caption reaches the LED wall or the stream.
+- [TypeCheck](https://github.com/Jev-Engineering/TypeCheck) ![stars](https://img.shields.io/github/stars/Jev-Engineering/TypeCheck?style=flat-square&label=%E2%98%85) - Discord moderation: text and image rules backed by Jev, with cost analytics per guild and a status line that says live acceptance is still open.
 
 ### Related Practices / Discussions
 
@@ -914,6 +917,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [awesome-jev directory](https://github.com/hellogumbo/awesome-jev) ![stars](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: its README counts 1,686 entries with a searchable site and stars refreshed daily, CC0 and explicitly unaffiliated with TypeSafe.
 - [Jev Guide](https://github.com/2456868764/jevguide) ![stars](https://img.shields.io/github/stars/2456868764/jevguide?style=flat-square&label=%E2%98%85) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
 - [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) ![stars](https://img.shields.io/github/stars/Jev-Engineering/cookbook?style=flat-square&label=%E2%98%85) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
+- [Awesome RSI](https://github.com/Valen-Team/Awesome-RSI) ![stars](https://img.shields.io/github/stars/Valen-Team/Awesome-RSI?style=flat-square&label=%E2%98%85) - Curated list: papers, projects, benchmarks and checkpoints for systems that retain experience and revise their own agent software.
 
 ## Submission format
 

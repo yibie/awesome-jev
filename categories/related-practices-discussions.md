@@ -122,3 +122,4 @@ Use this category for public discussion evidence — X threads, Reddit posts, Ha
 - [awesome-jev directory](https://github.com/hellogumbo/awesome-jev) - Directory: its README counts 1,686 entries with a searchable site and stars refreshed daily, CC0 and explicitly unaffiliated with TypeSafe.
 - [Jev Guide](https://github.com/2456868764/jevguide) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
 - [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
+- [Awesome RSI](https://github.com/Valen-Team/Awesome-RSI) - Curated list: papers, projects, benchmarks and checkpoints for systems that retain experience and revise their own agent software.
