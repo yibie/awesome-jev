@@ -67,7 +67,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 45 entries
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 53 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 54 entries
 - [Calibration & Research](categories/calibration-research.md) — 63 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 138 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
@@ -489,6 +489,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [JevalKit](https://github.com/Valen-Team/JevalKit) ![stars](https://img.shields.io/github/stars/Valen-Team/JevalKit?style=flat-square&label=%E2%98%85) - Evaluation toolkit: one command runs a Jev-like model across prepared benchmarks behind a unified interface, so the datasets no longer have to be reassembled repo by repo.
 - [Jev Drive Lab](https://github.com/BrendanH18/jev_fsd) ![stars](https://img.shields.io/github/stars/BrendanH18/jev_fsd?style=flat-square&label=%E2%98%85) - Driving test: real Canadian streets, the same car and the same marking rules, handed to a hand-written rule set, a decision model or to you - so a difference in the result is a difference in decisions.
 - [Jev Eval Lab](https://github.com/soraaa013-ops/jev-eval-lab) ![stars](https://img.shields.io/github/stars/soraaa013-ops/jev-eval-lab?style=flat-square&label=%E2%98%85) - Testbed: compares typed judges, generative LLM judges and deterministic baselines on the same pairwise tasks while preserving raw responses, request hashes, latency, probabilities and model versions - and says its focus is evaluation, not that Jev should replace an LLM.
+- [S1CogBench](https://github.com/dengzhe-hou/S1CogBench) ![stars](https://img.shields.io/github/stars/dengzhe-hou/S1CogBench?style=flat-square&label=%E2%98%85) - Model evaluation: asks Jev 1.14 typed `Choice` questions, and `Noul` questions where a probability is needed, on every trial of 24 established cognitive experiments, scoring its decisions against human data and uniform choice next to four open decision models, with a paper and a community leaderboard.
 
 ### Calibration & Research
 
