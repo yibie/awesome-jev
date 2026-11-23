@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 54 entries
 - [Calibration & Research](categories/calibration-research.md) — 63 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 138 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 139 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
@@ -701,6 +701,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python) ![stars](https://img.shields.io/github/stars/typesafe-ai/typesafe-sdk-python?style=flat-square&label=%E2%98%85) - Official SDK: the first-party Python client for the API, installable from PyPI and the base many Python entries here would otherwise vendor for themselves.
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) ![stars](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&label=%E2%98%85) - Serving: a server implementing the same HTTP API on Qwen3.6-35B-A3B through SGLang, one container per B200, with a note that it started as an early reproduction and that SGLang now ships the capability natively.
 - [Typewright](https://github.com/Jev-Engineering/TypeWright) ![stars](https://img.shields.io/github/stars/Jev-Engineering/TypeWright?style=flat-square&label=%E2%98%85) - Compiler: declare the state, the decisions and labelled examples, and it compiles typed questions, measures them and ships a JSON program.
+- [jev-starter](https://github.com/hamakyo/jev-starter) ![stars](https://img.shields.io/github/stars/hamakyo/jev-starter?style=flat-square&label=%E2%98%85) - Scaffold: starts from the position that the official SDK already covers the typed client, and builds what a production application still needs around a decision, published to npm with provenance.
 
 ### Game & Simulation
 
