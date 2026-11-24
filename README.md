@@ -68,7 +68,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 54 entries
-- [Calibration & Research](categories/calibration-research.md) — 63 entries
+- [Calibration & Research](categories/calibration-research.md) — 65 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 139 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
@@ -558,6 +558,8 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [Korean sentiment study](https://github.com/keyanwu256-eng/Jev-Korean-Sentiment-Analysis) ![stars](https://img.shields.io/github/stars/keyanwu256-eng/Jev-Korean-Sentiment-Analysis?style=flat-square&label=%E2%98%85) - Comparison: mixed Korean reviews scored by a Korean-capable model and by OpenJevX as a control, on eighteen self-written test sentences, with the caveat that a small self-authored set does not mean the service is accurate.
 - [OpenJev](https://github.com/razorback16/openjev) ![stars](https://img.shields.io/github/stars/razorback16/openjev?style=flat-square&label=%E2%98%85) - Decision server: reads answers straight from the model's probabilities instead of parsing text, so an answer cannot fall outside the schema, and returns a probability plus a confidence in tens of milliseconds.
 - [SearchJev](https://github.com/EvoScientist/SearchJev) ![stars](https://img.shields.io/github/stars/EvoScientist/SearchJev?style=flat-square&label=%E2%98%85) - Training code: turns a search agent's short decisions - is this document relevant, is the evidence sufficient, which link next - into schema-conditioned typed prediction, returning a calibrated distribution in one forward pass with no autoregressive decoding.
+- [DeepOpen](https://github.com/deepopen-com/deepopen) ![stars](https://img.shields.io/github/stars/deepopen-com/deepopen?style=flat-square&label=%E2%98%85) - Non-autoregressive SDK: evaluates predefined questions over text or JSON and returns labels, scores and probabilities without generating text, with benchmark tables in the README rather than claims.
+- [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) ![stars](https://img.shields.io/github/stars/StartLuxLabs/StartLux-Decision?style=flat-square&label=%E2%98%85) - Model family: instant models answer in one forward pass, while AutoThink answers in one pass when the top probability clears a gate, 0.6 by default, and otherwise writes a short reasoning trace and reads the answer again - behind an API compatible with System One.
 
 ### Infra / SDKs / Integrations
 
