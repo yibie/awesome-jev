@@ -123,3 +123,4 @@ Use this category for public discussion evidence — X threads, Reddit posts, Ha
 - [Jev Guide](https://github.com/2456868764/jevguide) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
 - [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
 - [Awesome RSI](https://github.com/Valen-Team/Awesome-RSI) - Curated list: papers, projects, benchmarks and checkpoints for systems that retain experience and revise their own agent software.
+- [awesome-jev by kraayenjon](https://github.com/kraayenjon/awesome-jev) - Directory: a curated list of Jev use cases and projects, published alongside a searchable companion site.

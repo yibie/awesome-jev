@@ -61,21 +61,21 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 79 entries
+- [Classification & Routing](categories/classification-routing.md) — 80 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 67 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 45 entries
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 54 entries
-- [Calibration & Research](categories/calibration-research.md) — 65 entries
+- [Calibration & Research](categories/calibration-research.md) — 67 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 139 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 16 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 113 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
 
 ### Open categories still being seeded
 
@@ -199,6 +199,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [Jev Router](https://github.com/AIAnytime/Jev-Router) ![stars](https://img.shields.io/github/stars/AIAnytime/Jev-Router?style=flat-square&label=%E2%98%85) - Model router: one OpenAI-compatible endpoint that sends each request to the right model, choosing with typed decisions that carry real probabilities.
 - [typesafe-cascade](https://github.com/monumei/typesafe-cascade) ![stars](https://img.shields.io/github/stars/monumei/typesafe-cascade?style=flat-square&label=%E2%98%85) - Cascade: sends every classification to a typed `Choice` first and only escalates to a reasoning model when Jev's confidence fails to clear a threshold, which is the pattern most projects here reimplement without naming it.
 - [pi-sieve](https://github.com/DrMkdaddy/pi-sieve) ![agent: Pi](https://img.shields.io/badge/agent-Pi-8250DF?style=flat-square) ![stars](https://img.shields.io/github/stars/DrMkdaddy/pi-sieve?style=flat-square&label=%E2%98%85) - Routing: semantic routing and a hybrid Jev/Clef compaction step inside the Pi coding agent's own tooling, alongside a guardrail suite.
+- [Switchyard](https://github.com/NVIDIA-NeMo/Switchyard) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/Switchyard?style=flat-square&label=%E2%98%85) - Routing: NVIDIA NeMo's traffic router can use Jev as the task judge, choosing between models from candidate descriptions and a probability cutoff rather than a rule table.
 
 ### Adaptive & Realtime UI
 
@@ -560,6 +561,8 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [SearchJev](https://github.com/EvoScientist/SearchJev) ![stars](https://img.shields.io/github/stars/EvoScientist/SearchJev?style=flat-square&label=%E2%98%85) - Training code: turns a search agent's short decisions - is this document relevant, is the evidence sufficient, which link next - into schema-conditioned typed prediction, returning a calibrated distribution in one forward pass with no autoregressive decoding.
 - [DeepOpen](https://github.com/deepopen-com/deepopen) ![stars](https://img.shields.io/github/stars/deepopen-com/deepopen?style=flat-square&label=%E2%98%85) - Non-autoregressive SDK: evaluates predefined questions over text or JSON and returns labels, scores and probabilities without generating text, with benchmark tables in the README rather than claims.
 - [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) ![stars](https://img.shields.io/github/stars/StartLuxLabs/StartLux-Decision?style=flat-square&label=%E2%98%85) - Model family: instant models answer in one forward pass, while AutoThink answers in one pass when the top probability clears a gate, 0.6 by default, and otherwise writes a short reasoning trace and reads the answer again - behind an API compatible with System One.
+- [SelfJev](https://github.com/Jwuthri/SelfJev) ![stars](https://img.shields.io/github/stars/Jwuthri/SelfJev?style=flat-square&label=%E2%98%85) - Open model behind Jev's API: turns context into structured answers, published to PyPI with its own site rather than left as a repository.
+- [snapjudge](https://github.com/Micha0827/snapjudge) ![stars](https://img.shields.io/github/stars/Micha0827/snapjudge?style=flat-square&label=%E2%98%85) - Local judge: typed decisions from Qwen models on a Mac, reading probabilities straight from the next-token logits with no text generation and no JSON parsing.
 
 ### Infra / SDKs / Integrations
 
@@ -922,6 +925,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Jev Guide](https://github.com/2456868764/jevguide) ![stars](https://img.shields.io/github/stars/2456868764/jevguide?style=flat-square&label=%E2%98%85) - Showcase: launch posts and real demos organised by industry, where every listed post is checked against its original X source before it goes in.
 - [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) ![stars](https://img.shields.io/github/stars/Jev-Engineering/cookbook?style=flat-square&label=%E2%98%85) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
 - [Awesome RSI](https://github.com/Valen-Team/Awesome-RSI) ![stars](https://img.shields.io/github/stars/Valen-Team/Awesome-RSI?style=flat-square&label=%E2%98%85) - Curated list: papers, projects, benchmarks and checkpoints for systems that retain experience and revise their own agent software.
+- [awesome-jev by kraayenjon](https://github.com/kraayenjon/awesome-jev) ![stars](https://img.shields.io/github/stars/kraayenjon/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: a curated list of Jev use cases and projects, published alongside a searchable companion site.
 
 ## Submission format
 
