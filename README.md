@@ -68,8 +68,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Agent Decisions](categories/agent-decisions.md) — 70 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 12 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 54 entries
-- [Calibration & Research](categories/calibration-research.md) — 67 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 139 entries
+- [Calibration & Research](categories/calibration-research.md) — 70 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 140 entries
 - [Game & Simulation](categories/game-simulation.md) — 30 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 11 entries
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
@@ -563,6 +563,9 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) ![stars](https://img.shields.io/github/stars/StartLuxLabs/StartLux-Decision?style=flat-square&label=%E2%98%85) - Model family: instant models answer in one forward pass, while AutoThink answers in one pass when the top probability clears a gate, 0.6 by default, and otherwise writes a short reasoning trace and reads the answer again - behind an API compatible with System One.
 - [SelfJev](https://github.com/Jwuthri/SelfJev) ![stars](https://img.shields.io/github/stars/Jwuthri/SelfJev?style=flat-square&label=%E2%98%85) - Open model behind Jev's API: turns context into structured answers, published to PyPI with its own site rather than left as a repository.
 - [snapjudge](https://github.com/Micha0827/snapjudge) ![stars](https://img.shields.io/github/stars/Micha0827/snapjudge?style=flat-square&label=%E2%98%85) - Local judge: typed decisions from Qwen models on a Mac, reading probabilities straight from the next-token logits with no text generation and no JSON parsing.
+- [Vega](https://github.com/NandhaKishorM/vegaml) ![stars](https://img.shields.io/github/stars/NandhaKishorM/vegaml?style=flat-square&label=%E2%98%85) - Typed decisions from a frozen model: calibrated probabilities, 73k tokens of context and text, image, audio and video input - plus, unusually, an honest "I should not decide" among the answers.
+- [jiwo](https://github.com/jiwidi/jiwo) ![stars](https://img.shields.io/github/stars/jiwidi/jiwo?style=flat-square&label=%E2%98%85) - Small decision models on the Jev wire format: a probability for every option in one forward pass, no generated text, about 50 ms median on a single H100.
+- [reflex](https://github.com/kshetrajna12/reflex) ![stars](https://img.shields.io/github/stars/kshetrajna12/reflex?style=flat-square&label=%E2%98%85) - Tiny decision model: takes a document, ticket or photo plus a list of questions with fixed options and answers all of them at once on your own GPU.
 
 ### Infra / SDKs / Integrations
 
@@ -707,6 +710,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang) ![stars](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&label=%E2%98%85) - Serving: a server implementing the same HTTP API on Qwen3.6-35B-A3B through SGLang, one container per B200, with a note that it started as an early reproduction and that SGLang now ships the capability natively.
 - [Typewright](https://github.com/Jev-Engineering/TypeWright) ![stars](https://img.shields.io/github/stars/Jev-Engineering/TypeWright?style=flat-square&label=%E2%98%85) - Compiler: declare the state, the decisions and labelled examples, and it compiles typed questions, measures them and ships a JSON program.
 - [jev-starter](https://github.com/hamakyo/jev-starter) ![stars](https://img.shields.io/github/stars/hamakyo/jev-starter?style=flat-square&label=%E2%98%85) - Scaffold: starts from the position that the official SDK already covers the typed client, and builds what a production application still needs around a decision, published to npm with provenance.
+- [Strands Decider](https://github.com/strands-labs/strands-decider) ![stars](https://img.shields.io/github/stars/strands-labs/strands-decider?style=flat-square&label=%E2%98%85) - From an agent framework: a small, fast decision model shipped inside the Stack that already runs agents, rather than published beside one.
 
 ### Game & Simulation
 
