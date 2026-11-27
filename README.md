@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 80 entries
+- [Classification & Routing](categories/classification-routing.md) — 81 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 13 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 67 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 45 entries
@@ -200,6 +200,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [typesafe-cascade](https://github.com/monumei/typesafe-cascade) ![stars](https://img.shields.io/github/stars/monumei/typesafe-cascade?style=flat-square&label=%E2%98%85) - Cascade: sends every classification to a typed `Choice` first and only escalates to a reasoning model when Jev's confidence fails to clear a threshold, which is the pattern most projects here reimplement without naming it.
 - [pi-sieve](https://github.com/DrMkdaddy/pi-sieve) ![agent: Pi](https://img.shields.io/badge/agent-Pi-8250DF?style=flat-square) ![stars](https://img.shields.io/github/stars/DrMkdaddy/pi-sieve?style=flat-square&label=%E2%98%85) - Routing: semantic routing and a hybrid Jev/Clef compaction step inside the Pi coding agent's own tooling, alongside a guardrail suite.
 - [Switchyard](https://github.com/NVIDIA-NeMo/Switchyard) ![stars](https://img.shields.io/github/stars/NVIDIA-NeMo/Switchyard?style=flat-square&label=%E2%98%85) - Routing: NVIDIA NeMo's traffic router can use Jev as the task judge, choosing between models from candidate descriptions and a probability cutoff rather than a rule table.
+- [Asking a model for a judgment in Kafka Streams: triaging new CVEs](https://www.alginte.com/blog/asking-a-model-for-a-judgment-in-kafka-streams/) - Security triage: a Kafka Streams topology asks Jev a `Choice` of critical, high, medium or low for each new CVE published without a severity, and sends answers under 0.6 confidence to human review.
 
 ### Adaptive & Realtime UI
 
