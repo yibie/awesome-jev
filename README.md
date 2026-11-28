@@ -75,7 +75,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Finance & Trading](categories/finance-trading.md) — 11 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 7 entries
 - [Content Moderation](categories/content-moderation.md) — 17 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 115 entries
 
 ### Open categories still being seeded
 
@@ -933,6 +933,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Jev Cookbook](https://github.com/Jev-Engineering/cookbook) ![stars](https://img.shields.io/github/stars/Jev-Engineering/cookbook?style=flat-square&label=%E2%98%85) - Recipes: one hundred notebooks that go from a first Choice question to text and image decisions, in a repo where the recipes are meant to be opened and run rather than read.
 - [Awesome RSI](https://github.com/Valen-Team/Awesome-RSI) ![stars](https://img.shields.io/github/stars/Valen-Team/Awesome-RSI?style=flat-square&label=%E2%98%85) - Curated list: papers, projects, benchmarks and checkpoints for systems that retain experience and revise their own agent software.
 - [awesome-jev by kraayenjon](https://github.com/kraayenjon/awesome-jev) ![stars](https://img.shields.io/github/stars/kraayenjon/awesome-jev?style=flat-square&label=%E2%98%85) - Directory: a curated list of Jev use cases and projects, published alongside a searchable companion site.
+- [Awesome Jev by logicrw](https://github.com/logicrw/awesome-jev-projects) ![stars](https://img.shields.io/github/stars/logicrw/awesome-jev-projects?style=flat-square&label=%E2%98%85) - Directory: an ecosystem radar rather than a  plain list, described as source-backed, with entries traced to something that can be checked.
 
 ## Submission format
 
